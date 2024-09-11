@@ -5,6 +5,8 @@ nRF Connect SDK: sdk-nrf
    :local:
    :depth: 2
 
+Test workflow.
+
 This repository contains the core of nRF Connect SDK, including subsystems,
 libraries, samples, and applications.
 It is also the SDK's west manifest repository, containing the nRF Connect SDK
