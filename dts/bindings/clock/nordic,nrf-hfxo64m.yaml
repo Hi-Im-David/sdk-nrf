@@ -1,0 +1,17 @@
+# Copyright (c) 2025 Nordic Semiconductor ASA
+# SPDX-License-Identifier: Apache-2.0
+
+description: Nordic nRF71 Series high-frequency crystal oscillator
+
+compatible: "nordic,nrf-hfxo64m"
+
+include: fixed-clock.yaml
+
+properties:
+  clock-frequency:
+    const: 64000000
+
+  accuracy-ppm:
+    type: int
+    description: Clock accuracy in parts per million
+    required: true

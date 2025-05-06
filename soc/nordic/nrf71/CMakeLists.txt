@@ -7,6 +7,10 @@ zephyr_library_sources(
 zephyr_include_directories(.)
 add_subdirectory(${ZEPHYR_BASE}/soc/nordic/common ${CMAKE_BINARY_DIR}/common)
 
+zephyr_library_sources(
+  ${ZEPHYR_BASE}/soc/nordic/common/soc_nrf_oscillator.c
+)
+
 # Ensure that image size aligns with 16 bytes so that MRAMC finalizes all writes
 # for the image correctly
 zephyr_linker_sources(SECTIONS SORT_KEY zzz_place_align_at_end align.ld)

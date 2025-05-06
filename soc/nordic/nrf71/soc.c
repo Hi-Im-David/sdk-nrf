@@ -20,6 +20,7 @@
 #include <zephyr/devicetree.h>
 #include <zephyr/init.h>
 #include <zephyr/logging/log.h>
+#include <soc_nrf_oscillator.h>
 
 #ifndef __NRF_TFM__
 #include <zephyr/cache.h>
@@ -53,6 +54,12 @@ void soc_early_init_hook(void)
 	/* Enable ICACHE */
 	sys_cache_instr_enable();
 #endif
+
+#if (defined(NRF_APPLICATION) && !defined(CONFIG_TRUSTED_EXECUTION_NONSECURE)) || \
+	!defined(__ZEPHYR__)
+	setup_lfxo_capacitors();
+#endif
+
 }
 
 void arch_busy_wait(uint32_t time_us)
