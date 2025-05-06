@@ -87,6 +87,11 @@
 	};
 };
 
+// &hfxo {
+// 	status = "okay";
+// 	accuracy-ppm = <30>;
+// };
+
 &uart20 {
 	current-speed = <115200>;
 	pinctrl-0 = <&uart20_default>;
