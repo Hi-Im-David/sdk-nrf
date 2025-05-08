@@ -6,6 +6,7 @@
 
 #include <mem.h>
 #include <nordic/nrf_common.dtsi>
+#include <zephyr/dt-bindings/clock/nrfs-audiopll.h>
 
 /delete-node/ &sw_pwm;
 
@@ -71,6 +72,12 @@
 			compatible = "fixed-clock";
 			#clock-cells = <0>;
 			clock-frequency = <DT_FREQ_M(256)>;
+		};
+
+		audiopll: audiopll {
+			compatible = "nordic,nrfs-audiopll";
+			frequency = <NRFS_AUDIOPLL_FREQ_AUDIO_44K1>;
+			status = "disabled";
 		};
 	};
 
@@ -673,6 +680,17 @@
 				clocks = <&lfxo>, <&pclk>;
 				clock-names = "lfclock", "hfclock";
 				status = "disabled";
+			};
+
+			tdm: tdm@e8000 {
+				compatible = "nordic,nrf-tdm";
+				easydma-maxcnt-bits = <15>;
+				reg = <0xe8000 0x1000>;
+				interrupts = <232 NRF_DEFAULT_IRQ_PRIORITY>;
+				status = "disabled";
+				clocks = <&pclk32m>;
+				nordic,clockpin-enable = <NRF_FUN_TDM_SCK_M>,
+							 <NRF_FUN_TDM_MCK>;
 			};
 
 			spi23: spi@ed000 {
