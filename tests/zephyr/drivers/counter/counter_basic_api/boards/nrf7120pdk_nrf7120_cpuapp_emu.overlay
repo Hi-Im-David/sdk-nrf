@@ -1,0 +1,27 @@
+&timer00 {
+    status = "okay";
+};
+
+&timer10 {
+    status = "okay";
+};
+
+&timer10 {
+    status = "okay";
+};
+
+&timer21 {
+    status = "okay";
+};
+
+&timer22 {
+    status = "okay";
+};
+
+&timer23 {
+    status = "okay";
+};
+
+&timer24 {
+    status = "okay";
+};
