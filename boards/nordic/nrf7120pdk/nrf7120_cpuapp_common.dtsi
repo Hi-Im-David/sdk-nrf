@@ -135,3 +135,61 @@
 &wifi {
 	status = "okay";
 };
+
+// &mspi01 {
+// 	pinctrl-0 = <&mspi01_default>;
+// 	pinctrl-1 = <&mspi01_sleep>;
+// 	pinctrl-names = "default", "sleep";
+// 	status = "disabled";
+
+// 	// mx25uw63: mx25uw6345g@0 {
+// 	// 	compatible = "mxicy,mx25u", "jedec,mspi-nor";
+// 	// 	status = "disabled";
+// 	// 	reg = <0>;
+// 	// 	jedec-id = [c2 84 37];
+// 	// 	sfdp-bfp = [
+// 	// 		e5 20 8a ff  ff ff ff 03  00 ff 00 ff  00 ff 00 ff
+// 	// 		ee ff ff ff  ff ff 00 ff  ff ff 00 ff  0c 20 10 d8
+// 	// 		00 ff 00 ff  87 79 01 00  84 12 00 c4  cc 04 67 46
+// 	// 		30 b0 30 b0  f4 bd d5 5c  00 00 00 ff  10 10 00 20
+// 	// 		00 00 00 00  00 00 7c 23  48 00 00 00  00 00 88 88
+// 	// 	];
+// 	// 	size = <67108864>;
+// 	// 	has-dpd;
+// 	// 	t-enter-dpd = <10000>;
+// 	// 	t-exit-dpd = <30000>;
+// 	// 	reset-gpios = <&gpio6 12 GPIO_ACTIVE_LOW>;
+		
+
+// 	// 	mspi-max-frequency = <DT_FREQ_M(50)>;
+// 	// 	mspi-io-mode = "MSPI_IO_MODE_OCTAL";
+// 	// 	mspi-data-rate = "MSPI_DATA_RATE_SINGLE";
+// 	// 	mspi-hardware-ce-num = <1>;
+// 	// 	mspi-cpp-mode = "MSPI_CPP_MODE_0";
+// 	// 	mspi-endian = "MSPI_BIG_ENDIAN";
+// 	// 	mspi-ce-polarity = "MSPI_CE_ACTIVE_LOW";
+// 	// };
+
+// 	w25q128jw: w25q128jw@0 {
+// 		compatible = "jedec,mspi-nor";
+// 		size = <DT_SIZE_M(16*8)>;
+// 		reg = <0>;
+// 		jedec-id = [ef 60 18];
+// 		status = "okay";
+// 		reset-gpios = <&gpio2 12 GPIO_ACTIVE_LOW>;
+
+// 		// erase-block-size = <4096>;
+// 		// write-block-size = <1>;
+
+// 		t-reset-pulse = <10000>;
+// 		t-reset-recovery = <35000>;
+		
+// 		mspi-max-frequency = <DT_FREQ_M(50)>;
+// 		mspi-io-mode = "MSPI_IO_MODE_OCTAL";
+// 		mspi-data-rate = "MSPI_DATA_RATE_SINGLE";
+// 		mspi-hardware-ce-num = <1>;
+// 		mspi-cpp-mode = "MSPI_CPP_MODE_0";
+// 		mspi-endian = "MSPI_BIG_ENDIAN";
+// 		mspi-ce-polarity = "MSPI_CE_ACTIVE_LOW";
+// 	};
+// };
