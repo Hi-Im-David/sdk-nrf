@@ -1,0 +1,258 @@
+/*
+ * Wiring required for the test:
+ * Brackets is Pin on HFV FPGA board
+ * - P2.6 (P0.22) <-> P1.0 (P0.5)
+ * - P2.11  	  <-> P1.1 (P0.6)
+ * - P2.7 (P0.31) <-> P1.2 (P0.8)
+ * - P2.8 (P0.21) <-> P1.3 (P0.9)
+ * - P2.9 (P0.20) <-> P1.8 (P0.26)
+ * - P2.10(P0.23) <-> P1.9 (P0.27)
+ */
+// CS = p0.2 = p0.18
+ /* UART20:
+     (7120) RX: P1.5 = P0.11 (FPGA BOARD)
+	 (7120) TX: P1.4 = P0.10 (FPGA BOARD)*/
+
+	 // Temp CSN = P0.2 (P0.18)
+
+#include <zephyr/dt-bindings/memory-attr/memory-attr.h>
+
+
+&pinctrl {
+
+	qspi_default: qspi_default {
+		group1 {
+			psels = <NRF_PSEL(QSPI2_SCK, 2, 6)>,
+					<NRF_PSEL(QSPI2_CSN, 2, 11)>,
+					<NRF_PSEL(QSPI2_DQ0, 2, 7)>;
+			nordic,drive-mode = <NRF_DRIVE_E0E1>;
+		};
+		group2 {
+			psels = <NRF_PSEL(QSPI2_DQ1, 2, 8)>,
+					<NRF_PSEL(QSPI2_DQ2, 2, 9)>,
+					<NRF_PSEL(QSPI2_DQ3, 2, 10)>;
+			nordic,drive-mode = <NRF_DRIVE_E0E1>;
+			bias-pull-up;
+		};
+	};
+
+	qspi_sleep: qspi_sleep {
+		group1 {
+			low-power-enable;
+			psels = <NRF_PSEL(QSPI2_SCK, 2, 6)>,
+					<NRF_PSEL(QSPI2_CSN, 2, 11)>,
+					<NRF_PSEL(QSPI2_DQ0, 2, 7)>,
+					<NRF_PSEL(QSPI2_DQ1, 2, 8)>,
+					<NRF_PSEL(QSPI2_DQ2, 2, 9)>,
+					<NRF_PSEL(QSPI2_DQ3, 2, 10)>;
+		};
+	};
+
+	spis21_default_alt: spis21_default_alt {
+		group1 {
+			psels = <NRF_PSEL(SPIS_SCK, 1,0)>,
+				<NRF_PSEL(SPIS_MOSI, 1,2)>,
+				<NRF_PSEL_DISCONNECTED(SPIS_MISO)>,
+				<NRF_PSEL(SPIS_CSN, 1,1)>;
+		};
+	};
+
+	spis21_sleep_alt: spis21_sleep_alt {
+		group1 {
+			psels = <NRF_PSEL(SPIS_SCK, 1,0)>,
+				<NRF_PSEL(SPIS_MOSI, 1,2)>,
+				<NRF_PSEL_DISCONNECTED(SPIS_MISO)>,
+				<NRF_PSEL(SPIS_CSN, 1,1)>;
+			low-power-enable;
+		};
+	};
+
+	spis22_default_alt: spis22_default_alt {
+		group1 {
+			psels = <NRF_PSEL(SPIS_SCK, 1,0)>,
+				<NRF_PSEL(SPIS_MOSI, 1,3)>,
+				<NRF_PSEL_DISCONNECTED(SPIS_MISO)>,
+				<NRF_PSEL(SPIS_CSN, 1,1)>;
+		};
+	};
+
+	spis22_sleep_alt: spis22_sleep_alt {
+		group1 {
+			psels = <NRF_PSEL(SPIS_SCK, 1,0)>,
+				<NRF_PSEL(SPIS_MOSI, 1,3)>,
+				<NRF_PSEL_DISCONNECTED(SPIS_MISO)>,
+				<NRF_PSEL(SPIS_CSN, 1,1)>;
+			low-power-enable;
+		};
+	};
+
+	spis23_default_alt: spis23_default_alt {
+		group1 {
+			psels = <NRF_PSEL(SPIS_SCK, 1,0)>,
+				<NRF_PSEL(SPIS_MOSI, 1,8)>,
+				<NRF_PSEL_DISCONNECTED(SPIS_MISO)>,
+				<NRF_PSEL(SPIS_CSN, 1,1)>;
+		};
+	};
+
+	spis23_sleep_alt: spis23_sleep_alt {
+		group1 {
+			psels = <NRF_PSEL(SPIS_SCK, 1,0)>,
+				<NRF_PSEL(SPIS_MOSI, 1,8)>,
+				<NRF_PSEL_DISCONNECTED(SPIS_MISO)>,
+				<NRF_PSEL(SPIS_CSN, 1,1)>;
+			low-power-enable;
+		};
+	};
+
+	spis24_default_alt: spis24_default_alt {
+		group1 {
+			psels = <NRF_PSEL(SPIS_SCK, 1,0)>,
+				<NRF_PSEL(SPIS_MOSI, 1,9)>,
+				<NRF_PSEL_DISCONNECTED(SPIS_MISO)>,
+				<NRF_PSEL(SPIS_CSN, 1,1)>;
+		};
+	};
+
+	spis24_sleep_alt: spis24_sleep_alt {
+		group1 {
+			psels = <NRF_PSEL(SPIS_SCK, 1,0)>,
+				<NRF_PSEL(SPIS_MOSI, 1,9)>,
+				<NRF_PSEL_DISCONNECTED(SPIS_MISO)>,
+				<NRF_PSEL(SPIS_CSN, 1,1)>;
+			low-power-enable;
+		};
+	};
+};
+
+/ {
+	reserved-memory {
+		#address-cells = <1>;
+		#size-cells = <1>;
+		ranges;
+
+		cpuapp_dma_region: memory@20100000 {
+			// compatible = "nordic,owned-memory", "zephyr,memory-region";
+			compatible = "zephyr,memory-region";
+			reg = <0x20100000 DT_SIZE_K(4)>;
+			status = "okay";
+			#memory-region-cells = <0>;
+			// nordic,access = <NRF_OWNER_ID_APPLICATION NRF_PERM_RW>;
+			zephyr,memory-region = "DMA_RAM2x_APP";
+			zephyr,memory-attr = <( DT_MEM_DMA )>;
+		};
+	};
+
+	chosen {
+		zephyr,console = &uart20;
+	};
+};
+
+// &cpuflpr_vpr {
+// 	pinctrl-0 = <&sqspi_default>;
+// 	pinctrl-1 = <&sqspi_sleep>;
+// 	pinctrl-names = "default", "sleep";
+// 	interrupts = <212 NRF_DEFAULT_IRQ_PRIORITY>;
+// 	status = "okay";
+// 	/delete-property/ execution-memory;
+// };
+
+// /delete-node/ &cpuflpr_code_data;
+// /delete-node/ &cpuapp_cpuflpr_ipc_shm;
+// /delete-node/ &cpuflpr_cpuapp_ipc_shm;
+// /delete-node/ &cpuapp_cpuflpr_ipc;
+
+// &ram21_region {
+// 	status = "okay";
+
+// 	softperiph_ram: memory@0 {
+// 		reg = <0 0x4000>;
+// 		ranges;
+// 		#address-cells = <1>;
+// 		#size-cells = <1>;
+
+// 		dut: sqspi: sqspi@3e00 {
+// 			compatible = "nordic,nrf-sqspi";
+// 			#address-cells = <1>;
+// 			#size-cells = <0>;
+// 			reg = <0x3e00 0x200>;
+// 			zephyr,pm-device-runtime-auto;
+// 			memory-regions = <&sqspi_buffers>;
+// 		};
+// 	};
+
+// 	sqspi_buffers: memory@4000 {
+// 		compatible = "zephyr,memory-region";
+// 		reg = <0x4000 0x4000>;
+// 		#memory-region-cells = <0>;
+// 		zephyr,memory-region = "SQSPI_BUFFERS";
+// 		zephyr,memory-attr = <DT_MEM_CACHEABLE>;
+// 	};
+// };
+
+&uart20{
+	status = "okay";
+};
+
+&uart00{
+	status = "disabled";
+};
+
+&spi00{
+	status = "disabled";
+};
+
+dut:&qspi01{
+	status = "okay";
+	pinctrl-0 = <&qspi_default>;
+	pinctrl-1 = <&qspi_sleep>;
+	pinctrl-names = "default", "sleep";
+};
+
+test_line0: &spi21 {
+	compatible = "nordic,nrf-spis";
+	status = "okay";
+	def-char = <0x00>;
+	pinctrl-0 = <&spis21_default_alt>;
+	pinctrl-1 = <&spis21_sleep_alt>;
+	pinctrl-names = "default", "sleep";
+	memory-regions = <&cpuapp_dma_region>;
+	/delete-property/rx-delay-supported;
+	/delete-property/rx-delay;
+};
+
+test_line1: &spi22 {
+	compatible = "nordic,nrf-spis";
+	status = "okay";
+	def-char = <0x00>;
+	pinctrl-0 = <&spis22_default_alt>;
+	pinctrl-1 = <&spis22_sleep_alt>;
+	pinctrl-names = "default", "sleep";
+	memory-regions = <&cpuapp_dma_region>;
+	/delete-property/rx-delay-supported;
+	/delete-property/rx-delay;
+};
+
+test_line2: &spi23 {
+	compatible = "nordic,nrf-spis";
+	status = "okay";
+	def-char = <0x00>;
+	pinctrl-0 = <&spis23_default_alt>;
+	pinctrl-1 = <&spis23_sleep_alt>;
+	pinctrl-names = "default", "sleep";
+	memory-regions = <&cpuapp_dma_region>;
+	/delete-property/rx-delay-supported;
+	/delete-property/rx-delay;
+};
+
+test_line3: &spi24 {
+	compatible = "nordic,nrf-spis";
+	status = "okay";
+	def-char = <0x00>;
+	pinctrl-0 = <&spis24_default_alt>;
+	pinctrl-1 = <&spis24_sleep_alt>;
+	pinctrl-names = "default", "sleep";
+	memory-regions = <&cpuapp_dma_region>;
+	/delete-property/rx-delay-supported;
+	/delete-property/rx-delay;
+};
