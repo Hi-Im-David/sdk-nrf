@@ -1,0 +1,2264 @@
+[0/5] Performing build step for 'mspi_master_slave'
+[1/7] Building C object zephyr/drivers/mspi/CMakeFiles/drivers__mspi.dir/mspi_dw.c.obj
+FAILED: zephyr/drivers/mspi/CMakeFiles/drivers__mspi.dir/mspi_dw.c.obj 
+ccache /home/daje/zephyrproject/zephyr-sdk-0.17.2/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc -DKERNEL -DK_HEAP_MEM_POOL_SIZE=0 -DMBEDTLS_CONFIG_FILE=\"nrf-config.h\" -DMBEDTLS_PSA_CRYPTO_CONFIG_FILE=\"nrf-psa-crypto-config.h\" -DMBEDTLS_PSA_CRYPTO_USER_CONFIG_FILE=\"nrf-psa-crypto-user-config.h\" -DNRF54L_CONFIGURATION_56_ENABLE=0 -DNRF7120_ENGA_XXAA -DNRFX_COREDEP_DELAY_US_LOOP_CYCLES=6 -DNRF_APPLICATION -DNRF_CONFIG_CPU_FREQ_MHZ=256 -DPICOLIBC_LONG_LONG_PRINTF_SCANF -DUSE_PARTITION_MANAGER=1 -D__LINUX_ERRNO_EXTENSIONS__ -D__PROGRAM_START -D__ZEPHYR_SUPERVISOR__ -D__ZEPHYR__=1 -I/home/daje/git/sdk-ic-nrf71xx/nrf/samples/mspi/mspi_master_slave/build/mspi_master_slave/zephyr/include/generated/zephyr -I/home/daje/git/sdk-ic-nrf71xx/zephyr/include -I/home/daje/git/sdk-ic-nrf71xx/nrf/samples/mspi/mspi_master_slave/build/mspi_master_slave/zephyr/include/generated -I/home/daje/git/sdk-ic-nrf71xx/nrf/soc/nordic -I/home/daje/git/sdk-ic-nrf71xx/nrf/soc/nordic/nrf71/. -I/home/daje/git/sdk-ic-nrf71xx/zephyr/soc/nordic/common/. -I/home/daje/git/sdk-ic-nrf71xx/nrf/include -I/home/daje/git/sdk-ic-nrf71xx/nrf/tests/include -I/home/daje/git/sdk-ic-nrf71xx/modules/hal/cmsis/CMSIS/Core/Include -I/home/daje/git/sdk-ic-nrf71xx/modules/hal/cmsis_6/CMSIS/Core/Include -I/home/daje/git/sdk-ic-nrf71xx/zephyr/modules/cmsis_6/. -I/home/daje/git/sdk-ic-nrf71xx/nrf/modules/hal_nordic/. -I/home/daje/git/sdk-ic-nrf71xx/zephyr/../modules/hal/nordic_internal/nrfx -I/home/daje/git/sdk-ic-nrf71xx/zephyr/../modules/hal/nordic_internal/nrfx/drivers/include -I/home/daje/git/sdk-ic-nrf71xx/zephyr/../modules/hal/nordic_internal/nrfx/mdk -I/home/daje/git/sdk-ic-nrf71xx/zephyr/modules/hal_nordic/nrfx/. -I/home/daje/git/sdk-ic-nrf71xx/nrf/samples/mspi/mspi_master_slave/build/mspi_master_slave/generated/library_nrf_security_psa -I/home/daje/git/sdk-ic-nrf71xx/nrf/subsys/nrf_security/include -I/home/daje/git/sdk-ic-nrf71xx/modules/crypto/oberon-psa-crypto/oberon/drivers -I/home/daje/git/sdk-ic-nrf71xx/nrf/subsys/nrf_security/src/threading/include -I/home/daje/git/sdk-ic-nrf71xx/nrf/subsys/nrf_security/src/utils -I/home/daje/git/sdk-ic-nrf71xx/modules/crypto/oberon-psa-crypto/include -I/home/daje/git/sdk-ic-nrf71xx/modules/crypto/oberon-psa-crypto/library -I/home/daje/git/sdk-ic-nrf71xx/modules/crypto/mbedtls/library -I/home/daje/git/sdk-ic-nrf71xx/modules/crypto/mbedtls/include -I/home/daje/git/sdk-ic-nrf71xx/modules/crypto/mbedtls/include/library -I/home/daje/git/sdk-ic-nrf71xx/nrfxlib/crypto/nrf_oberon/include -I/home/daje/git/sdk-ic-nrf71xx/nrfxlib/crypto/nrf_oberon/include/mbedtls -isystem /home/daje/git/sdk-ic-nrf71xx/zephyr/lib/libc/common/include -Wshadow -fno-strict-aliasing -Og -imacros /home/daje/git/sdk-ic-nrf71xx/nrf/samples/mspi/mspi_master_slave/build/mspi_master_slave/zephyr/include/generated/zephyr/autoconf.h -fno-printf-return-value -fno-common -g -gdwarf-4 -fdiagnostics-color=always -mcpu=cortex-m33 -mthumb -mabi=aapcs -mfp16-format=ieee -mtp=soft --sysroot=/home/daje/zephyrproject/zephyr-sdk-0.17.2/arm-zephyr-eabi/arm-zephyr-eabi -imacros /home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/toolchain/zephyr_stdint.h -Wall -Wformat -Wformat-security -Wno-format-zero-length -Wdouble-promotion -Wno-pointer-sign -Wpointer-arith -Wexpansion-to-defined -Wno-unused-but-set-variable -Werror=implicit-int -fno-pic -fno-pie -fno-asynchronous-unwind-tables -ftls-model=local-exec -fno-reorder-functions --param=min-pagesize=0 -fno-defer-pop -fmacro-prefix-map=/home/daje/git/sdk-ic-nrf71xx/nrf/samples/mspi/mspi_master_slave=CMAKE_SOURCE_DIR -fmacro-prefix-map=/home/daje/git/sdk-ic-nrf71xx/zephyr=ZEPHYR_BASE -fmacro-prefix-map=/home/daje/git/sdk-ic-nrf71xx=WEST_TOPDIR -ffunction-sections -fdata-sections -specs=picolibc.specs -std=c99 -MD -MT zephyr/drivers/mspi/CMakeFiles/drivers__mspi.dir/mspi_dw.c.obj -MF zephyr/drivers/mspi/CMakeFiles/drivers__mspi.dir/mspi_dw.c.obj.d -o zephyr/drivers/mspi/CMakeFiles/drivers__mspi.dir/mspi_dw.c.obj -c /home/daje/git/sdk-ic-nrf71xx/zephyr/drivers/mspi/mspi_dw.c
+In file included from /home/daje/git/sdk-ic-nrf71xx/zephyr/drivers/mspi/mspi_dw.c:86:
+/home/daje/git/sdk-ic-nrf71xx/zephyr/drivers/mspi/mspi_dw_vendor_specific.h: In function 'vendor_specific_set_tmod':
+/home/daje/git/sdk-ic-nrf71xx/zephyr/drivers/mspi/mspi_dw_vendor_specific.h:318:34: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uintptr_t' {aka 'long unsigned int'} [-Wformat=]
+  318 |         printk("Setting tmod 0x%8x to 0x%2x\r\n",addr, tmod);
+      |                                ~~^               ~~~~
+      |                                  |               |
+      |                                  unsigned int    uintptr_t {aka long unsigned int}
+      |                                %8lx
+/home/daje/git/sdk-ic-nrf71xx/zephyr/drivers/mspi/mspi_dw.c: In function 'setup_buffer_be32':
+/home/daje/git/sdk-ic-nrf71xx/zephyr/drivers/mspi/mspi_dw.c:133:18: warning: unused variable 'word_count' [-Wunused-variable]
+  133 |         uint32_t word_count = (packet->num_bytes + 3) / 4;
+      |                  ^~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/drivers/mspi/mspi_dw.c:130:17: warning: unused variable 'bytes_per_frame_exp' [-Wunused-variable]
+  130 |         uint8_t bytes_per_frame_exp = dev_data->bytes_per_frame_exp;
+      |                 ^~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/drivers/mspi/mspi_dw.c: At top level:
+/home/daje/git/sdk-ic-nrf71xx/zephyr/drivers/mspi/mspi_dw.c:955:1: warning: multi-line comment [-Wcomment]
+  955 | // #define EVDMA_JOB(BUFFER, SIZE, ATTR) \
+      | ^
+/home/daje/git/sdk-ic-nrf71xx/zephyr/drivers/mspi/mspi_dw.c:957:1: warning: multi-line comment [-Wcomment]
+  957 | // #define EVDMA_JOB_32(BUFFER, SIZE, ATTR) \
+      | ^
+/home/daje/git/sdk-ic-nrf71xx/zephyr/drivers/mspi/mspi_dw.c:959:1: warning: multi-line comment [-Wcomment]
+  959 | // #define EVDMA_NULL_JOB() \
+      | ^
+/home/daje/git/sdk-ic-nrf71xx/zephyr/drivers/mspi/mspi_dw.c: In function 'start_next_packet_dma':
+/home/daje/git/sdk-ic-nrf71xx/zephyr/drivers/mspi/mspi_dw.c:1167:19: warning: unused variable 'packet_buf_be32' [-Wunused-variable]
+ 1167 |         uint32_t *packet_buf_be32 = setup_buffer_be32(dev, packet);
+      |                   ^~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/drivers/mspi/mspi_dw.c:1160:18: warning: unused variable 'rx_transfer_length' [-Wunused-variable]
+ 1160 |         uint32_t rx_transfer_length;
+      |                  ^~~~~~~~~~~~~~~~~~
+In file included from /home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log.h:11,
+                 from /home/daje/git/sdk-ic-nrf71xx/zephyr/drivers/mspi/mspi_dw.c:17:
+/home/daje/git/sdk-ic-nrf71xx/zephyr/drivers/mspi/mspi_dw.c: In function '_api_transceive':
+/home/daje/git/sdk-ic-nrf71xx/zephyr/drivers/mspi/mspi_dw.c:1601:34: error: 'const struct mspi_xfer' has no member named 'packet'; did you mean 'packets'?
+ 1601 |         LOG_DBG("DIR = %d", req->packet.dir);
+      |                                  ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:223:32: note: in definition of macro 'Z_LOG_TO_PRINTK'
+  223 |                              ##__VA_ARGS__); \
+      |                                ^~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:318:44: note: in expansion of macro 'Z_LOG2'
+  318 | #define Z_LOG(_level, ...)                 Z_LOG2(_level, 0, Z_LOG_CURRENT_DATA(), __VA_ARGS__)
+      |                                            ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log.h:79:25: note: in expansion of macro 'Z_LOG'
+   79 | #define LOG_DBG(...)    Z_LOG(LOG_LEVEL_DBG, __VA_ARGS__)
+      |                         ^~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/drivers/mspi/mspi_dw.c:1601:9: note: in expansion of macro 'LOG_DBG'
+ 1601 |         LOG_DBG("DIR = %d", req->packet.dir);
+      |         ^~~~~~~
+In file included from /home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:34,
+                 from /home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util.h:17,
+                 from /home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/atomic.h:18,
+                 from /home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/kernel_includes.h:25,
+                 from /home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/kernel.h:17,
+                 from /home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/drivers/mspi.h:21,
+                 from /home/daje/git/sdk-ic-nrf71xx/zephyr/drivers/mspi/mspi_dw.c:14:
+/home/daje/git/sdk-ic-nrf71xx/zephyr/drivers/mspi/mspi_dw.c:1601:34: error: 'const struct mspi_xfer' has no member named 'packet'; did you mean 'packets'?
+ 1601 |         LOG_DBG("DIR = %d", req->packet.dir);
+      |                                  ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_internal.h:72:26: note: in definition of macro '__DEBRACKET'
+   72 | #define __DEBRACKET(...) __VA_ARGS__
+      |                          ^~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_internal.h:64:9: note: in expansion of macro '__GET_ARG2_DEBRACKET'
+   64 |         __GET_ARG2_DEBRACKET(one_or_two_args _if_code, _else_code)
+      |         ^~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_internal.h:61:9: note: in expansion of macro '__COND_CODE'
+   61 |         __COND_CODE(_ZZZZ##_flag, _if_0_code, _else_code)
+      |         ^~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:220:9: note: in expansion of macro 'Z_COND_CODE_0'
+  220 |         Z_COND_CODE_0(_flag, _if_0_code, _else_code)
+      |         ^~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:563:9: note: in expansion of macro 'COND_CODE_0'
+  563 |         COND_CODE_0(idx, (), (Z_AUTO_TYPE Z_LOG_LOCAL_ARG_NAME(idx, arg) = Z_ARGIFY(arg)))
+      |         ^~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:563:76: note: in expansion of macro 'Z_ARGIFY'
+  563 |         COND_CODE_0(idx, (), (Z_AUTO_TYPE Z_LOG_LOCAL_ARG_NAME(idx, arg) = Z_ARGIFY(arg)))
+      |                                                                            ^~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1069:9: note: in expansion of macro 'Z_LOG_LOCAL_ARG_CREATE'
+ 1069 |         fixed_arg0(idx, x)
+      |         ^~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:38:9: note: in expansion of macro 'Z_FOR_EACH_IDX_EXEC'
+   38 |         z_call(2, x, fixed_arg0, fixed_arg1)
+      |         ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:23:81: note: in expansion of macro 'Z_FOR_LOOP_3'
+   23 |                                 _57, _58, _59, _60, _61, _62, _63, _64, N, ...) N
+      |                                                                                 ^
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1072:9: note: in expansion of macro 'Z_FOR_EACH_ENGINE'
+ 1072 |         Z_FOR_EACH_ENGINE(Z_FOR_EACH_IDX_EXEC, sep, F, _, __VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:594:9: note: in expansion of macro 'Z_FOR_EACH_IDX'
+  594 |         Z_FOR_EACH_IDX(F, sep, REVERSE_ARGS(__VA_ARGS__))
+      |         ^~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1075:9: note: in expansion of macro 'Z_BYPASS'
+ 1075 |         fixed_arg0(x)
+      |         ^~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:28:9: note: in expansion of macro 'Z_FOR_EACH_EXEC'
+   28 |         z_call(0, x, fixed_arg0, fixed_arg1)
+      |         ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:31:9: note: in expansion of macro 'Z_FOR_LOOP_1'
+   31 |         Z_FOR_LOOP_1(z_call, sep, fixed_arg0, fixed_arg1, ##__VA_ARGS__) \
+      |         ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:36:9: note: in expansion of macro 'Z_FOR_LOOP_2'
+   36 |         Z_FOR_LOOP_2(z_call, sep, fixed_arg0, fixed_arg1, ##__VA_ARGS__) \
+      |         ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:23:81: note: in expansion of macro 'Z_FOR_LOOP_3'
+   23 |                                 _57, _58, _59, _60, _61, _62, _63, _64, N, ...) N
+      |                                                                                 ^
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:657:9: note: in expansion of macro 'Z_FOR_EACH_ENGINE'
+  657 |         Z_FOR_EACH_ENGINE(Z_FOR_EACH_EXEC, (,), Z_BYPASS, _, __VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:594:32: note: in expansion of macro 'REVERSE_ARGS'
+  594 |         Z_FOR_EACH_IDX(F, sep, REVERSE_ARGS(__VA_ARGS__))
+      |                                ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:572:9: note: in expansion of macro 'FOR_EACH_IDX'
+  572 |         FOR_EACH_IDX(Z_LOG_LOCAL_ARG_CREATE, (;), __VA_ARGS__); \
+      |         ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:582:9: note: in expansion of macro 'Z_LOG_MSG_CREATE2'
+  582 |         Z_LOG_MSG_CREATE2(_try_0cpy, _mode, UTIL_CAT(Z_LOG_FUNC_PREFIX_, _level), \
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_internal.h:69:53: note: in expansion of macro '__DEBRACKET'
+   69 | #define __GET_ARG2_DEBRACKET(ignore_this, val, ...) __DEBRACKET val
+      |                                                     ^~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_internal.h:64:9: note: in expansion of macro '__GET_ARG2_DEBRACKET'
+   64 |         __GET_ARG2_DEBRACKET(one_or_two_args _if_code, _else_code)
+      |         ^~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_internal.h:59:9: note: in expansion of macro '__COND_CODE'
+   59 |         __COND_CODE(_XXXX##_flag, _if_1_code, _else_code)
+      |         ^~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:204:9: note: in expansion of macro 'Z_COND_CODE_1'
+  204 |         Z_COND_CODE_1(_flag, _if_1_code, _else_code)
+      |         ^~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:131:9: note: in expansion of macro 'COND_CODE_1'
+  131 |         COND_CODE_1(UTIL_CAT(Z_LOG_FUNC_PREFIX_##_level), \
+      |         ^~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_internal.h:69:53: note: in expansion of macro '__DEBRACKET'
+   69 | #define __GET_ARG2_DEBRACKET(ignore_this, val, ...) __DEBRACKET val
+      |                                                     ^~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_internal.h:64:9: note: in expansion of macro '__GET_ARG2_DEBRACKET'
+   64 |         __GET_ARG2_DEBRACKET(one_or_two_args _if_code, _else_code)
+      |         ^~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_internal.h:61:9: note: in expansion of macro '__COND_CODE'
+   61 |         __COND_CODE(_ZZZZ##_flag, _if_0_code, _else_code)
+      |         ^~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:220:9: note: in expansion of macro 'Z_COND_CODE_0'
+  220 |         Z_COND_CODE_0(_flag, _if_0_code, _else_code)
+      |         ^~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:121:9: note: in expansion of macro 'COND_CODE_0'
+  121 |         COND_CODE_0(NUM_VA_ARGS_LESS_1(_, ##__VA_ARGS__), \
+      |         ^~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_internal.h:69:53: note: in expansion of macro '__DEBRACKET'
+   69 | #define __GET_ARG2_DEBRACKET(ignore_this, val, ...) __DEBRACKET val
+      |                                                     ^~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_internal.h:64:9: note: in expansion of macro '__GET_ARG2_DEBRACKET'
+   64 |         __GET_ARG2_DEBRACKET(one_or_two_args _if_code, _else_code)
+      |         ^~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_internal.h:61:9: note: in expansion of macro '__COND_CODE'
+   61 |         __COND_CODE(_ZZZZ##_flag, _if_0_code, _else_code)
+      |         ^~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:220:9: note: in expansion of macro 'Z_COND_CODE_0'
+  220 |         Z_COND_CODE_0(_flag, _if_0_code, _else_code)
+      |         ^~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:112:17: note: in expansion of macro 'COND_CODE_0'
+  112 |                 COND_CODE_0(NUM_VA_ARGS_LESS_1(__VA_ARGS__),\
+      |                 ^~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:401:33: note: in expansion of macro 'Z_GET_ARGS_LESS_1'
+  401 | #define GET_ARGS_LESS_N(N, ...) Z_GET_ARGS_LESS_##N(__VA_ARGS__)
+      |                                 ^~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:114:32: note: in expansion of macro 'GET_ARGS_LESS_N'
+  114 |                             (, GET_ARGS_LESS_N(1, __VA_ARGS__))\
+      |                                ^~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:123:18: note: in expansion of macro 'Z_LOG_STR_WITH_PREFIX2'
+  123 |                 (Z_LOG_STR_WITH_PREFIX2(__VA_ARGS__)))
+      |                  ^~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:132:18: note: in expansion of macro 'Z_LOG_STR_WITH_PREFIX'
+  132 |                 (Z_LOG_STR_WITH_PREFIX(__VA_ARGS__)), (__VA_ARGS__))
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:584:28: note: in expansion of macro 'Z_LOG_STR'
+  584 |                            Z_LOG_STR(_level, __VA_ARGS__))
+      |                            ^~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:307:17: note: in expansion of macro 'Z_LOG_MSG_CREATE'
+  307 |                 Z_LOG_MSG_CREATE(UTIL_NOT(IS_ENABLED(CONFIG_USERSPACE)), _mode,                    \
+      |                 ^~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:318:44: note: in expansion of macro 'Z_LOG2'
+  318 | #define Z_LOG(_level, ...)                 Z_LOG2(_level, 0, Z_LOG_CURRENT_DATA(), __VA_ARGS__)
+      |                                            ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log.h:79:25: note: in expansion of macro 'Z_LOG'
+   79 | #define LOG_DBG(...)    Z_LOG(LOG_LEVEL_DBG, __VA_ARGS__)
+      |                         ^~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/drivers/mspi/mspi_dw.c:1601:9: note: in expansion of macro 'LOG_DBG'
+ 1601 |         LOG_DBG("DIR = %d", req->packet.dir);
+      |         ^~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/drivers/mspi/mspi_dw.c:1601:34: error: 'const struct mspi_xfer' has no member named 'packet'; did you mean 'packets'?
+ 1601 |         LOG_DBG("DIR = %d", req->packet.dir);
+      |                                  ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_internal.h:72:26: note: in definition of macro '__DEBRACKET'
+   72 | #define __DEBRACKET(...) __VA_ARGS__
+      |                          ^~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_internal.h:64:9: note: in expansion of macro '__GET_ARG2_DEBRACKET'
+   64 |         __GET_ARG2_DEBRACKET(one_or_two_args _if_code, _else_code)
+      |         ^~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_internal.h:61:9: note: in expansion of macro '__COND_CODE'
+   61 |         __COND_CODE(_ZZZZ##_flag, _if_0_code, _else_code)
+      |         ^~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:220:9: note: in expansion of macro 'Z_COND_CODE_0'
+  220 |         Z_COND_CODE_0(_flag, _if_0_code, _else_code)
+      |         ^~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:563:9: note: in expansion of macro 'COND_CODE_0'
+  563 |         COND_CODE_0(idx, (), (Z_AUTO_TYPE Z_LOG_LOCAL_ARG_NAME(idx, arg) = Z_ARGIFY(arg)))
+      |         ^~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:563:76: note: in expansion of macro 'Z_ARGIFY'
+  563 |         COND_CODE_0(idx, (), (Z_AUTO_TYPE Z_LOG_LOCAL_ARG_NAME(idx, arg) = Z_ARGIFY(arg)))
+      |                                                                            ^~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1069:9: note: in expansion of macro 'Z_LOG_LOCAL_ARG_CREATE'
+ 1069 |         fixed_arg0(idx, x)
+      |         ^~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:38:9: note: in expansion of macro 'Z_FOR_EACH_IDX_EXEC'
+   38 |         z_call(2, x, fixed_arg0, fixed_arg1)
+      |         ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:23:81: note: in expansion of macro 'Z_FOR_LOOP_3'
+   23 |                                 _57, _58, _59, _60, _61, _62, _63, _64, N, ...) N
+      |                                                                                 ^
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1072:9: note: in expansion of macro 'Z_FOR_EACH_ENGINE'
+ 1072 |         Z_FOR_EACH_ENGINE(Z_FOR_EACH_IDX_EXEC, sep, F, _, __VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:594:9: note: in expansion of macro 'Z_FOR_EACH_IDX'
+  594 |         Z_FOR_EACH_IDX(F, sep, REVERSE_ARGS(__VA_ARGS__))
+      |         ^~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1075:9: note: in expansion of macro 'Z_BYPASS'
+ 1075 |         fixed_arg0(x)
+      |         ^~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:28:9: note: in expansion of macro 'Z_FOR_EACH_EXEC'
+   28 |         z_call(0, x, fixed_arg0, fixed_arg1)
+      |         ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:31:9: note: in expansion of macro 'Z_FOR_LOOP_1'
+   31 |         Z_FOR_LOOP_1(z_call, sep, fixed_arg0, fixed_arg1, ##__VA_ARGS__) \
+      |         ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:36:9: note: in expansion of macro 'Z_FOR_LOOP_2'
+   36 |         Z_FOR_LOOP_2(z_call, sep, fixed_arg0, fixed_arg1, ##__VA_ARGS__) \
+      |         ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:23:81: note: in expansion of macro 'Z_FOR_LOOP_3'
+   23 |                                 _57, _58, _59, _60, _61, _62, _63, _64, N, ...) N
+      |                                                                                 ^
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:657:9: note: in expansion of macro 'Z_FOR_EACH_ENGINE'
+  657 |         Z_FOR_EACH_ENGINE(Z_FOR_EACH_EXEC, (,), Z_BYPASS, _, __VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:594:32: note: in expansion of macro 'REVERSE_ARGS'
+  594 |         Z_FOR_EACH_IDX(F, sep, REVERSE_ARGS(__VA_ARGS__))
+      |                                ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:572:9: note: in expansion of macro 'FOR_EACH_IDX'
+  572 |         FOR_EACH_IDX(Z_LOG_LOCAL_ARG_CREATE, (;), __VA_ARGS__); \
+      |         ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:582:9: note: in expansion of macro 'Z_LOG_MSG_CREATE2'
+  582 |         Z_LOG_MSG_CREATE2(_try_0cpy, _mode, UTIL_CAT(Z_LOG_FUNC_PREFIX_, _level), \
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_internal.h:69:53: note: in expansion of macro '__DEBRACKET'
+   69 | #define __GET_ARG2_DEBRACKET(ignore_this, val, ...) __DEBRACKET val
+      |                                                     ^~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_internal.h:64:9: note: in expansion of macro '__GET_ARG2_DEBRACKET'
+   64 |         __GET_ARG2_DEBRACKET(one_or_two_args _if_code, _else_code)
+      |         ^~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_internal.h:59:9: note: in expansion of macro '__COND_CODE'
+   59 |         __COND_CODE(_XXXX##_flag, _if_1_code, _else_code)
+      |         ^~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:204:9: note: in expansion of macro 'Z_COND_CODE_1'
+  204 |         Z_COND_CODE_1(_flag, _if_1_code, _else_code)
+      |         ^~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:131:9: note: in expansion of macro 'COND_CODE_1'
+  131 |         COND_CODE_1(UTIL_CAT(Z_LOG_FUNC_PREFIX_##_level), \
+      |         ^~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_internal.h:69:53: note: in expansion of macro '__DEBRACKET'
+   69 | #define __GET_ARG2_DEBRACKET(ignore_this, val, ...) __DEBRACKET val
+      |                                                     ^~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_internal.h:64:9: note: in expansion of macro '__GET_ARG2_DEBRACKET'
+   64 |         __GET_ARG2_DEBRACKET(one_or_two_args _if_code, _else_code)
+      |         ^~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_internal.h:61:9: note: in expansion of macro '__COND_CODE'
+   61 |         __COND_CODE(_ZZZZ##_flag, _if_0_code, _else_code)
+      |         ^~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:220:9: note: in expansion of macro 'Z_COND_CODE_0'
+  220 |         Z_COND_CODE_0(_flag, _if_0_code, _else_code)
+      |         ^~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:121:9: note: in expansion of macro 'COND_CODE_0'
+  121 |         COND_CODE_0(NUM_VA_ARGS_LESS_1(_, ##__VA_ARGS__), \
+      |         ^~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_internal.h:69:53: note: in expansion of macro '__DEBRACKET'
+   69 | #define __GET_ARG2_DEBRACKET(ignore_this, val, ...) __DEBRACKET val
+      |                                                     ^~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_internal.h:64:9: note: in expansion of macro '__GET_ARG2_DEBRACKET'
+   64 |         __GET_ARG2_DEBRACKET(one_or_two_args _if_code, _else_code)
+      |         ^~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_internal.h:61:9: note: in expansion of macro '__COND_CODE'
+   61 |         __COND_CODE(_ZZZZ##_flag, _if_0_code, _else_code)
+      |         ^~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:220:9: note: in expansion of macro 'Z_COND_CODE_0'
+  220 |         Z_COND_CODE_0(_flag, _if_0_code, _else_code)
+      |         ^~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:112:17: note: in expansion of macro 'COND_CODE_0'
+  112 |                 COND_CODE_0(NUM_VA_ARGS_LESS_1(__VA_ARGS__),\
+      |                 ^~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:401:33: note: in expansion of macro 'Z_GET_ARGS_LESS_1'
+  401 | #define GET_ARGS_LESS_N(N, ...) Z_GET_ARGS_LESS_##N(__VA_ARGS__)
+      |                                 ^~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:114:32: note: in expansion of macro 'GET_ARGS_LESS_N'
+  114 |                             (, GET_ARGS_LESS_N(1, __VA_ARGS__))\
+      |                                ^~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:123:18: note: in expansion of macro 'Z_LOG_STR_WITH_PREFIX2'
+  123 |                 (Z_LOG_STR_WITH_PREFIX2(__VA_ARGS__)))
+      |                  ^~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:132:18: note: in expansion of macro 'Z_LOG_STR_WITH_PREFIX'
+  132 |                 (Z_LOG_STR_WITH_PREFIX(__VA_ARGS__)), (__VA_ARGS__))
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:584:28: note: in expansion of macro 'Z_LOG_STR'
+  584 |                            Z_LOG_STR(_level, __VA_ARGS__))
+      |                            ^~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:307:17: note: in expansion of macro 'Z_LOG_MSG_CREATE'
+  307 |                 Z_LOG_MSG_CREATE(UTIL_NOT(IS_ENABLED(CONFIG_USERSPACE)), _mode,                    \
+      |                 ^~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:318:44: note: in expansion of macro 'Z_LOG2'
+  318 | #define Z_LOG(_level, ...)                 Z_LOG2(_level, 0, Z_LOG_CURRENT_DATA(), __VA_ARGS__)
+      |                                            ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log.h:79:25: note: in expansion of macro 'Z_LOG'
+   79 | #define LOG_DBG(...)    Z_LOG(LOG_LEVEL_DBG, __VA_ARGS__)
+      |                         ^~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/drivers/mspi/mspi_dw.c:1601:9: note: in expansion of macro 'LOG_DBG'
+ 1601 |         LOG_DBG("DIR = %d", req->packet.dir);
+      |         ^~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:559:65: error: '_v2' undeclared (first use in this function); did you mean '_v1'?
+  559 | #define Z_LOG_LOCAL_ARG_NAME(idx, arg) COND_CODE_0(idx, (arg), (_v##idx))
+      |                                                                 ^~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_internal.h:72:26: note: in definition of macro '__DEBRACKET'
+   72 | #define __DEBRACKET(...) __VA_ARGS__
+      |                          ^~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_internal.h:64:9: note: in expansion of macro '__GET_ARG2_DEBRACKET'
+   64 |         __GET_ARG2_DEBRACKET(one_or_two_args _if_code, _else_code)
+      |         ^~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_internal.h:61:9: note: in expansion of macro '__COND_CODE'
+   61 |         __COND_CODE(_ZZZZ##_flag, _if_0_code, _else_code)
+      |         ^~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:220:9: note: in expansion of macro 'Z_COND_CODE_0'
+  220 |         Z_COND_CODE_0(_flag, _if_0_code, _else_code)
+      |         ^~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:525:9: note: in expansion of macro 'COND_CODE_0'
+  525 |         COND_CODE_0(NUM_VA_ARGS_LESS_1(__VA_ARGS__), \
+      |         ^~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:103:18: note: in expansion of macro 'Z_ARGIFY'
+  103 |         _Generic(Z_ARGIFY(x), \
+      |                  ^~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:511:21: note: in expansion of macro 'Z_CBPRINTF_IS_PCHAR'
+  511 |                 0 : Z_CBPRINTF_IS_PCHAR(x, flags))
+      |                     ^~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1055:9: note: in expansion of macro 'Z_CBPRINTF_IS_X_PCHAR'
+ 1055 |         fixed_arg0(idx, x, fixed_arg1)
+      |         ^~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:33:9: note: in expansion of macro 'Z_FOR_EACH_IDX_FIXED_ARG_EXEC'
+   33 |         z_call(1, x, fixed_arg0, fixed_arg1)
+      |         ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:23:81: note: in expansion of macro 'Z_FOR_LOOP_2'
+   23 |                                 _57, _58, _59, _60, _61, _62, _63, _64, N, ...) N
+      |                                                                                 ^
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1058:9: note: in expansion of macro 'Z_FOR_EACH_ENGINE'
+ 1058 |         Z_FOR_EACH_ENGINE(Z_FOR_EACH_IDX_FIXED_ARG_EXEC, sep, \
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:650:9: note: in expansion of macro 'Z_FOR_EACH_IDX_FIXED_ARG'
+  650 |         Z_FOR_EACH_IDX_FIXED_ARG(F, sep, fixed_arg, REVERSE_ARGS(__VA_ARGS__))
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1075:9: note: in expansion of macro 'Z_BYPASS'
+ 1075 |         fixed_arg0(x)
+      |         ^~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:28:9: note: in expansion of macro 'Z_FOR_EACH_EXEC'
+   28 |         z_call(0, x, fixed_arg0, fixed_arg1)
+      |         ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:31:9: note: in expansion of macro 'Z_FOR_LOOP_1'
+   31 |         Z_FOR_LOOP_1(z_call, sep, fixed_arg0, fixed_arg1, ##__VA_ARGS__) \
+      |         ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:23:81: note: in expansion of macro 'Z_FOR_LOOP_2'
+   23 |                                 _57, _58, _59, _60, _61, _62, _63, _64, N, ...) N
+      |                                                                                 ^
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:657:9: note: in expansion of macro 'Z_FOR_EACH_ENGINE'
+  657 |         Z_FOR_EACH_ENGINE(Z_FOR_EACH_EXEC, (,), Z_BYPASS, _, __VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:650:53: note: in expansion of macro 'REVERSE_ARGS'
+  650 |         Z_FOR_EACH_IDX_FIXED_ARG(F, sep, fixed_arg, REVERSE_ARGS(__VA_ARGS__))
+      |                                                     ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:522:10: note: in expansion of macro 'FOR_EACH_IDX_FIXED_ARG'
+  522 |         (FOR_EACH_IDX_FIXED_ARG(Z_CBPRINTF_IS_X_PCHAR, (+), flags, __VA_ARGS__))
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:527:22: note: in expansion of macro 'Z_CBPRINTF_HAS_PCHAR_ARGS'
+  527 |                     (Z_CBPRINTF_HAS_PCHAR_ARGS(flags, __VA_ARGS__)))
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:543:23: note: in expansion of macro 'Z_CBPRINTF_PCHAR_COUNT'
+  543 |                 _rv = Z_CBPRINTF_PCHAR_COUNT(flags, __VA_ARGS__) > 0 ? 1 : 0; \
+      |                       ^~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf.h:354:9: note: in expansion of macro 'Z_CBPRINTF_MUST_RUNTIME_PACKAGE'
+  354 |         Z_CBPRINTF_MUST_RUNTIME_PACKAGE(flags, __VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:520:27: note: in expansion of macro 'CBPRINTF_MUST_RUNTIME_PACKAGE'
+  520 |         bool has_rw_str = CBPRINTF_MUST_RUNTIME_PACKAGE( \
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:573:9: note: in expansion of macro 'Z_LOG_MSG_CREATE3'
+  573 |         Z_LOG_MSG_CREATE3(_try_0cpy, _mode,  _cstr_cnt, _domain_id, _source,\
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_internal.h:69:53: note: in expansion of macro '__DEBRACKET'
+   69 | #define __GET_ARG2_DEBRACKET(ignore_this, val, ...) __DEBRACKET val
+      |                                                     ^~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_internal.h:64:9: note: in expansion of macro '__GET_ARG2_DEBRACKET'
+   64 |         __GET_ARG2_DEBRACKET(one_or_two_args _if_code, _else_code)
+      |         ^~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_internal.h:61:9: note: in expansion of macro '__COND_CODE'
+   61 |         __COND_CODE(_ZZZZ##_flag, _if_0_code, _else_code)
+      |         ^~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:220:9: note: in expansion of macro 'Z_COND_CODE_0'
+  220 |         Z_COND_CODE_0(_flag, _if_0_code, _else_code)
+      |         ^~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:559:40: note: in expansion of macro 'COND_CODE_0'
+  559 | #define Z_LOG_LOCAL_ARG_NAME(idx, arg) COND_CODE_0(idx, (arg), (_v##idx))
+      |                                        ^~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1069:9: note: in expansion of macro 'Z_LOG_LOCAL_ARG_NAME'
+ 1069 |         fixed_arg0(idx, x)
+      |         ^~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:38:9: note: in expansion of macro 'Z_FOR_EACH_IDX_EXEC'
+   38 |         z_call(2, x, fixed_arg0, fixed_arg1)
+      |         ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:23:81: note: in expansion of macro 'Z_FOR_LOOP_3'
+   23 |                                 _57, _58, _59, _60, _61, _62, _63, _64, N, ...) N
+      |                                                                                 ^
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1072:9: note: in expansion of macro 'Z_FOR_EACH_ENGINE'
+ 1072 |         Z_FOR_EACH_ENGINE(Z_FOR_EACH_IDX_EXEC, sep, F, _, __VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:594:9: note: in expansion of macro 'Z_FOR_EACH_IDX'
+  594 |         Z_FOR_EACH_IDX(F, sep, REVERSE_ARGS(__VA_ARGS__))
+      |         ^~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:575:28: note: in expansion of macro 'FOR_EACH_IDX'
+  575 |                            FOR_EACH_IDX(Z_LOG_LOCAL_ARG_NAME, (,), __VA_ARGS__)); \
+      |                            ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:582:9: note: in expansion of macro 'Z_LOG_MSG_CREATE2'
+  582 |         Z_LOG_MSG_CREATE2(_try_0cpy, _mode, UTIL_CAT(Z_LOG_FUNC_PREFIX_, _level), \
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:307:17: note: in expansion of macro 'Z_LOG_MSG_CREATE'
+  307 |                 Z_LOG_MSG_CREATE(UTIL_NOT(IS_ENABLED(CONFIG_USERSPACE)), _mode,                    \
+      |                 ^~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:318:44: note: in expansion of macro 'Z_LOG2'
+  318 | #define Z_LOG(_level, ...)                 Z_LOG2(_level, 0, Z_LOG_CURRENT_DATA(), __VA_ARGS__)
+      |                                            ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log.h:79:25: note: in expansion of macro 'Z_LOG'
+   79 | #define LOG_DBG(...)    Z_LOG(LOG_LEVEL_DBG, __VA_ARGS__)
+      |                         ^~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/drivers/mspi/mspi_dw.c:1601:9: note: in expansion of macro 'LOG_DBG'
+ 1601 |         LOG_DBG("DIR = %d", req->packet.dir);
+      |         ^~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:559:65: note: each undeclared identifier is reported only once for each function it appears in
+  559 | #define Z_LOG_LOCAL_ARG_NAME(idx, arg) COND_CODE_0(idx, (arg), (_v##idx))
+      |                                                                 ^~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_internal.h:72:26: note: in definition of macro '__DEBRACKET'
+   72 | #define __DEBRACKET(...) __VA_ARGS__
+      |                          ^~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_internal.h:64:9: note: in expansion of macro '__GET_ARG2_DEBRACKET'
+   64 |         __GET_ARG2_DEBRACKET(one_or_two_args _if_code, _else_code)
+      |         ^~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_internal.h:61:9: note: in expansion of macro '__COND_CODE'
+   61 |         __COND_CODE(_ZZZZ##_flag, _if_0_code, _else_code)
+      |         ^~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:220:9: note: in expansion of macro 'Z_COND_CODE_0'
+  220 |         Z_COND_CODE_0(_flag, _if_0_code, _else_code)
+      |         ^~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:525:9: note: in expansion of macro 'COND_CODE_0'
+  525 |         COND_CODE_0(NUM_VA_ARGS_LESS_1(__VA_ARGS__), \
+      |         ^~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:103:18: note: in expansion of macro 'Z_ARGIFY'
+  103 |         _Generic(Z_ARGIFY(x), \
+      |                  ^~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:511:21: note: in expansion of macro 'Z_CBPRINTF_IS_PCHAR'
+  511 |                 0 : Z_CBPRINTF_IS_PCHAR(x, flags))
+      |                     ^~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1055:9: note: in expansion of macro 'Z_CBPRINTF_IS_X_PCHAR'
+ 1055 |         fixed_arg0(idx, x, fixed_arg1)
+      |         ^~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:33:9: note: in expansion of macro 'Z_FOR_EACH_IDX_FIXED_ARG_EXEC'
+   33 |         z_call(1, x, fixed_arg0, fixed_arg1)
+      |         ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:23:81: note: in expansion of macro 'Z_FOR_LOOP_2'
+   23 |                                 _57, _58, _59, _60, _61, _62, _63, _64, N, ...) N
+      |                                                                                 ^
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1058:9: note: in expansion of macro 'Z_FOR_EACH_ENGINE'
+ 1058 |         Z_FOR_EACH_ENGINE(Z_FOR_EACH_IDX_FIXED_ARG_EXEC, sep, \
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:650:9: note: in expansion of macro 'Z_FOR_EACH_IDX_FIXED_ARG'
+  650 |         Z_FOR_EACH_IDX_FIXED_ARG(F, sep, fixed_arg, REVERSE_ARGS(__VA_ARGS__))
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1075:9: note: in expansion of macro 'Z_BYPASS'
+ 1075 |         fixed_arg0(x)
+      |         ^~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:28:9: note: in expansion of macro 'Z_FOR_EACH_EXEC'
+   28 |         z_call(0, x, fixed_arg0, fixed_arg1)
+      |         ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:31:9: note: in expansion of macro 'Z_FOR_LOOP_1'
+   31 |         Z_FOR_LOOP_1(z_call, sep, fixed_arg0, fixed_arg1, ##__VA_ARGS__) \
+      |         ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:23:81: note: in expansion of macro 'Z_FOR_LOOP_2'
+   23 |                                 _57, _58, _59, _60, _61, _62, _63, _64, N, ...) N
+      |                                                                                 ^
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:657:9: note: in expansion of macro 'Z_FOR_EACH_ENGINE'
+  657 |         Z_FOR_EACH_ENGINE(Z_FOR_EACH_EXEC, (,), Z_BYPASS, _, __VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:650:53: note: in expansion of macro 'REVERSE_ARGS'
+  650 |         Z_FOR_EACH_IDX_FIXED_ARG(F, sep, fixed_arg, REVERSE_ARGS(__VA_ARGS__))
+      |                                                     ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:522:10: note: in expansion of macro 'FOR_EACH_IDX_FIXED_ARG'
+  522 |         (FOR_EACH_IDX_FIXED_ARG(Z_CBPRINTF_IS_X_PCHAR, (+), flags, __VA_ARGS__))
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:527:22: note: in expansion of macro 'Z_CBPRINTF_HAS_PCHAR_ARGS'
+  527 |                     (Z_CBPRINTF_HAS_PCHAR_ARGS(flags, __VA_ARGS__)))
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:543:23: note: in expansion of macro 'Z_CBPRINTF_PCHAR_COUNT'
+  543 |                 _rv = Z_CBPRINTF_PCHAR_COUNT(flags, __VA_ARGS__) > 0 ? 1 : 0; \
+      |                       ^~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf.h:354:9: note: in expansion of macro 'Z_CBPRINTF_MUST_RUNTIME_PACKAGE'
+  354 |         Z_CBPRINTF_MUST_RUNTIME_PACKAGE(flags, __VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:520:27: note: in expansion of macro 'CBPRINTF_MUST_RUNTIME_PACKAGE'
+  520 |         bool has_rw_str = CBPRINTF_MUST_RUNTIME_PACKAGE( \
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:573:9: note: in expansion of macro 'Z_LOG_MSG_CREATE3'
+  573 |         Z_LOG_MSG_CREATE3(_try_0cpy, _mode,  _cstr_cnt, _domain_id, _source,\
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_internal.h:69:53: note: in expansion of macro '__DEBRACKET'
+   69 | #define __GET_ARG2_DEBRACKET(ignore_this, val, ...) __DEBRACKET val
+      |                                                     ^~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_internal.h:64:9: note: in expansion of macro '__GET_ARG2_DEBRACKET'
+   64 |         __GET_ARG2_DEBRACKET(one_or_two_args _if_code, _else_code)
+      |         ^~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_internal.h:61:9: note: in expansion of macro '__COND_CODE'
+   61 |         __COND_CODE(_ZZZZ##_flag, _if_0_code, _else_code)
+      |         ^~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:220:9: note: in expansion of macro 'Z_COND_CODE_0'
+  220 |         Z_COND_CODE_0(_flag, _if_0_code, _else_code)
+      |         ^~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:559:40: note: in expansion of macro 'COND_CODE_0'
+  559 | #define Z_LOG_LOCAL_ARG_NAME(idx, arg) COND_CODE_0(idx, (arg), (_v##idx))
+      |                                        ^~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1069:9: note: in expansion of macro 'Z_LOG_LOCAL_ARG_NAME'
+ 1069 |         fixed_arg0(idx, x)
+      |         ^~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:38:9: note: in expansion of macro 'Z_FOR_EACH_IDX_EXEC'
+   38 |         z_call(2, x, fixed_arg0, fixed_arg1)
+      |         ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:23:81: note: in expansion of macro 'Z_FOR_LOOP_3'
+   23 |                                 _57, _58, _59, _60, _61, _62, _63, _64, N, ...) N
+      |                                                                                 ^
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1072:9: note: in expansion of macro 'Z_FOR_EACH_ENGINE'
+ 1072 |         Z_FOR_EACH_ENGINE(Z_FOR_EACH_IDX_EXEC, sep, F, _, __VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:594:9: note: in expansion of macro 'Z_FOR_EACH_IDX'
+  594 |         Z_FOR_EACH_IDX(F, sep, REVERSE_ARGS(__VA_ARGS__))
+      |         ^~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:575:28: note: in expansion of macro 'FOR_EACH_IDX'
+  575 |                            FOR_EACH_IDX(Z_LOG_LOCAL_ARG_NAME, (,), __VA_ARGS__)); \
+      |                            ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:582:9: note: in expansion of macro 'Z_LOG_MSG_CREATE2'
+  582 |         Z_LOG_MSG_CREATE2(_try_0cpy, _mode, UTIL_CAT(Z_LOG_FUNC_PREFIX_, _level), \
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:307:17: note: in expansion of macro 'Z_LOG_MSG_CREATE'
+  307 |                 Z_LOG_MSG_CREATE(UTIL_NOT(IS_ENABLED(CONFIG_USERSPACE)), _mode,                    \
+      |                 ^~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:318:44: note: in expansion of macro 'Z_LOG2'
+  318 | #define Z_LOG(_level, ...)                 Z_LOG2(_level, 0, Z_LOG_CURRENT_DATA(), __VA_ARGS__)
+      |                                            ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log.h:79:25: note: in expansion of macro 'Z_LOG'
+   79 | #define LOG_DBG(...)    Z_LOG(LOG_LEVEL_DBG, __VA_ARGS__)
+      |                         ^~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/drivers/mspi/mspi_dw.c:1601:9: note: in expansion of macro 'LOG_DBG'
+ 1601 |         LOG_DBG("DIR = %d", req->packet.dir);
+      |         ^~~~~~~
+In file included from /home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/toolchain.h:52,
+                 from /home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/__assert.h:11,
+                 from /home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/drivers/mspi.h:19:
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/toolchain/gcc.h:87:51: error: expression in static assertion is not an integer
+   87 | #define BUILD_ASSERT(EXPR, MSG...) _Static_assert((EXPR), "" MSG)
+      |                                                   ^
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:681:9: note: in expansion of macro 'BUILD_ASSERT'
+  681 |         BUILD_ASSERT(!((sizeof(double) < VA_STACK_ALIGN(long double)) && \
+      |         ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:726:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG2'
+  726 |         Z_CBPRINTF_PACK_ARG2(arg_idx, _pbuf, _pkg_len, _pkg_offset, _pmax, arg)
+      |         ^~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1069:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG'
+ 1069 |         fixed_arg0(idx, x)
+      |         ^~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:38:9: note: in expansion of macro 'Z_FOR_EACH_IDX_EXEC'
+   38 |         z_call(2, x, fixed_arg0, fixed_arg1)
+      |         ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:23:81: note: in expansion of macro 'Z_FOR_LOOP_3'
+   23 |                                 _57, _58, _59, _60, _61, _62, _63, _64, N, ...) N
+      |                                                                                 ^
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1072:9: note: in expansion of macro 'Z_FOR_EACH_ENGINE'
+ 1072 |         Z_FOR_EACH_ENGINE(Z_FOR_EACH_IDX_EXEC, sep, F, _, __VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:594:9: note: in expansion of macro 'Z_FOR_EACH_IDX'
+  594 |         Z_FOR_EACH_IDX(F, sep, REVERSE_ARGS(__VA_ARGS__))
+      |         ^~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:829:9: note: in expansion of macro 'FOR_EACH_IDX'
+  829 |         FOR_EACH_IDX(Z_CBPRINTF_PACK_ARG, (;), __VA_ARGS__);\
+      |         ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:866:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE_GENERIC'
+  866 |         Z_CBPRINTF_STATIC_PACKAGE_GENERIC(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf.h:387:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE'
+  387 |         Z_CBPRINTF_STATIC_PACKAGE(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:336:17: note: in expansion of macro 'CBPRINTF_STATIC_PACKAGE'
+  336 |                 CBPRINTF_STATIC_PACKAGE(NULL, 0, _plen, Z_LOG_MSG_ALIGN_OFFSET, _options, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:543:17: note: in expansion of macro 'Z_LOG_MSG_STACK_CREATE'
+  543 |                 Z_LOG_MSG_STACK_CREATE(_cstr_cnt, _domain_id, _source, _level, _data, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:573:9: note: in expansion of macro 'Z_LOG_MSG_CREATE3'
+  573 |         Z_LOG_MSG_CREATE3(_try_0cpy, _mode,  _cstr_cnt, _domain_id, _source,\
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:582:9: note: in expansion of macro 'Z_LOG_MSG_CREATE2'
+  582 |         Z_LOG_MSG_CREATE2(_try_0cpy, _mode, UTIL_CAT(Z_LOG_FUNC_PREFIX_, _level), \
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:307:17: note: in expansion of macro 'Z_LOG_MSG_CREATE'
+  307 |                 Z_LOG_MSG_CREATE(UTIL_NOT(IS_ENABLED(CONFIG_USERSPACE)), _mode,                    \
+      |                 ^~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:318:44: note: in expansion of macro 'Z_LOG2'
+  318 | #define Z_LOG(_level, ...)                 Z_LOG2(_level, 0, Z_LOG_CURRENT_DATA(), __VA_ARGS__)
+      |                                            ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log.h:79:25: note: in expansion of macro 'Z_LOG'
+   79 | #define LOG_DBG(...)    Z_LOG(LOG_LEVEL_DBG, __VA_ARGS__)
+      |                         ^~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/drivers/mspi/mspi_dw.c:1601:9: note: in expansion of macro 'LOG_DBG'
+ 1601 |         LOG_DBG("DIR = %d", req->packet.dir);
+      |         ^~~~~~~
+In file included from /home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf.h:124,
+                 from /home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:11,
+                 from /home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:9:
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:567:15: error: '__v' undeclared (first use in this function)
+  567 |         (void)__v; \
+      |               ^~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:567:15: note: in definition of macro 'Z_CBPRINTF_ARG_SIZE'
+  567 |         (void)__v; \
+      |               ^~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:726:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG2'
+  726 |         Z_CBPRINTF_PACK_ARG2(arg_idx, _pbuf, _pkg_len, _pkg_offset, _pmax, arg)
+      |         ^~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1069:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG'
+ 1069 |         fixed_arg0(idx, x)
+      |         ^~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:38:9: note: in expansion of macro 'Z_FOR_EACH_IDX_EXEC'
+   38 |         z_call(2, x, fixed_arg0, fixed_arg1)
+      |         ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:23:81: note: in expansion of macro 'Z_FOR_LOOP_3'
+   23 |                                 _57, _58, _59, _60, _61, _62, _63, _64, N, ...) N
+      |                                                                                 ^
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1072:9: note: in expansion of macro 'Z_FOR_EACH_ENGINE'
+ 1072 |         Z_FOR_EACH_ENGINE(Z_FOR_EACH_IDX_EXEC, sep, F, _, __VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:594:9: note: in expansion of macro 'Z_FOR_EACH_IDX'
+  594 |         Z_FOR_EACH_IDX(F, sep, REVERSE_ARGS(__VA_ARGS__))
+      |         ^~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:829:9: note: in expansion of macro 'FOR_EACH_IDX'
+  829 |         FOR_EACH_IDX(Z_CBPRINTF_PACK_ARG, (;), __VA_ARGS__);\
+      |         ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:866:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE_GENERIC'
+  866 |         Z_CBPRINTF_STATIC_PACKAGE_GENERIC(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf.h:387:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE'
+  387 |         Z_CBPRINTF_STATIC_PACKAGE(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:336:17: note: in expansion of macro 'CBPRINTF_STATIC_PACKAGE'
+  336 |                 CBPRINTF_STATIC_PACKAGE(NULL, 0, _plen, Z_LOG_MSG_ALIGN_OFFSET, _options, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:543:17: note: in expansion of macro 'Z_LOG_MSG_STACK_CREATE'
+  543 |                 Z_LOG_MSG_STACK_CREATE(_cstr_cnt, _domain_id, _source, _level, _data, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:573:9: note: in expansion of macro 'Z_LOG_MSG_CREATE3'
+  573 |         Z_LOG_MSG_CREATE3(_try_0cpy, _mode,  _cstr_cnt, _domain_id, _source,\
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:582:9: note: in expansion of macro 'Z_LOG_MSG_CREATE2'
+  582 |         Z_LOG_MSG_CREATE2(_try_0cpy, _mode, UTIL_CAT(Z_LOG_FUNC_PREFIX_, _level), \
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:307:17: note: in expansion of macro 'Z_LOG_MSG_CREATE'
+  307 |                 Z_LOG_MSG_CREATE(UTIL_NOT(IS_ENABLED(CONFIG_USERSPACE)), _mode,                    \
+      |                 ^~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:318:44: note: in expansion of macro 'Z_LOG2'
+  318 | #define Z_LOG(_level, ...)                 Z_LOG2(_level, 0, Z_LOG_CURRENT_DATA(), __VA_ARGS__)
+      |                                            ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log.h:79:25: note: in expansion of macro 'Z_LOG'
+   79 | #define LOG_DBG(...)    Z_LOG(LOG_LEVEL_DBG, __VA_ARGS__)
+      |                         ^~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/drivers/mspi/mspi_dw.c:1601:9: note: in expansion of macro 'LOG_DBG'
+ 1601 |         LOG_DBG("DIR = %d", req->packet.dir);
+      |         ^~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:595:23: error: '_v' undeclared (first use in this function); did you mean '_d'?
+  595 |                 (void)_v; \
+      |                       ^~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:595:23: note: in definition of macro 'Z_CBPRINTF_STORE_ARG'
+  595 |                 (void)_v; \
+      |                       ^~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:726:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG2'
+  726 |         Z_CBPRINTF_PACK_ARG2(arg_idx, _pbuf, _pkg_len, _pkg_offset, _pmax, arg)
+      |         ^~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1069:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG'
+ 1069 |         fixed_arg0(idx, x)
+      |         ^~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:38:9: note: in expansion of macro 'Z_FOR_EACH_IDX_EXEC'
+   38 |         z_call(2, x, fixed_arg0, fixed_arg1)
+      |         ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:23:81: note: in expansion of macro 'Z_FOR_LOOP_3'
+   23 |                                 _57, _58, _59, _60, _61, _62, _63, _64, N, ...) N
+      |                                                                                 ^
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1072:9: note: in expansion of macro 'Z_FOR_EACH_ENGINE'
+ 1072 |         Z_FOR_EACH_ENGINE(Z_FOR_EACH_IDX_EXEC, sep, F, _, __VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:594:9: note: in expansion of macro 'Z_FOR_EACH_IDX'
+  594 |         Z_FOR_EACH_IDX(F, sep, REVERSE_ARGS(__VA_ARGS__))
+      |         ^~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:829:9: note: in expansion of macro 'FOR_EACH_IDX'
+  829 |         FOR_EACH_IDX(Z_CBPRINTF_PACK_ARG, (;), __VA_ARGS__);\
+      |         ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:866:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE_GENERIC'
+  866 |         Z_CBPRINTF_STATIC_PACKAGE_GENERIC(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf.h:387:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE'
+  387 |         Z_CBPRINTF_STATIC_PACKAGE(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:336:17: note: in expansion of macro 'CBPRINTF_STATIC_PACKAGE'
+  336 |                 CBPRINTF_STATIC_PACKAGE(NULL, 0, _plen, Z_LOG_MSG_ALIGN_OFFSET, _options, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:543:17: note: in expansion of macro 'Z_LOG_MSG_STACK_CREATE'
+  543 |                 Z_LOG_MSG_STACK_CREATE(_cstr_cnt, _domain_id, _source, _level, _data, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:573:9: note: in expansion of macro 'Z_LOG_MSG_CREATE3'
+  573 |         Z_LOG_MSG_CREATE3(_try_0cpy, _mode,  _cstr_cnt, _domain_id, _source,\
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:582:9: note: in expansion of macro 'Z_LOG_MSG_CREATE2'
+  582 |         Z_LOG_MSG_CREATE2(_try_0cpy, _mode, UTIL_CAT(Z_LOG_FUNC_PREFIX_, _level), \
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:307:17: note: in expansion of macro 'Z_LOG_MSG_CREATE'
+  307 |                 Z_LOG_MSG_CREATE(UTIL_NOT(IS_ENABLED(CONFIG_USERSPACE)), _mode,                    \
+      |                 ^~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:318:44: note: in expansion of macro 'Z_LOG2'
+  318 | #define Z_LOG(_level, ...)                 Z_LOG2(_level, 0, Z_LOG_CURRENT_DATA(), __VA_ARGS__)
+      |                                            ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log.h:79:25: note: in expansion of macro 'Z_LOG'
+   79 | #define LOG_DBG(...)    Z_LOG(LOG_LEVEL_DBG, __VA_ARGS__)
+      |                         ^~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/drivers/mspi/mspi_dw.c:1601:9: note: in expansion of macro 'LOG_DBG'
+ 1601 |         LOG_DBG("DIR = %d", req->packet.dir);
+      |         ^~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:565:21: warning: declaration of '__v' shadows previous non-variable [-Wshadow]
+  565 |         __auto_type __v = Z_ARGIFY(Z_CONSTIFY(v)); \
+      |                     ^~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:565:21: note: in definition of macro 'Z_CBPRINTF_ARG_SIZE'
+  565 |         __auto_type __v = Z_ARGIFY(Z_CONSTIFY(v)); \
+      |                     ^~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:726:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG2'
+  726 |         Z_CBPRINTF_PACK_ARG2(arg_idx, _pbuf, _pkg_len, _pkg_offset, _pmax, arg)
+      |         ^~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1069:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG'
+ 1069 |         fixed_arg0(idx, x)
+      |         ^~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:28:9: note: in expansion of macro 'Z_FOR_EACH_IDX_EXEC'
+   28 |         z_call(0, x, fixed_arg0, fixed_arg1)
+      |         ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:31:9: note: in expansion of macro 'Z_FOR_LOOP_1'
+   31 |         Z_FOR_LOOP_1(z_call, sep, fixed_arg0, fixed_arg1, ##__VA_ARGS__) \
+      |         ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:36:9: note: in expansion of macro 'Z_FOR_LOOP_2'
+   36 |         Z_FOR_LOOP_2(z_call, sep, fixed_arg0, fixed_arg1, ##__VA_ARGS__) \
+      |         ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:23:81: note: in expansion of macro 'Z_FOR_LOOP_3'
+   23 |                                 _57, _58, _59, _60, _61, _62, _63, _64, N, ...) N
+      |                                                                                 ^
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1072:9: note: in expansion of macro 'Z_FOR_EACH_ENGINE'
+ 1072 |         Z_FOR_EACH_ENGINE(Z_FOR_EACH_IDX_EXEC, sep, F, _, __VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:594:9: note: in expansion of macro 'Z_FOR_EACH_IDX'
+  594 |         Z_FOR_EACH_IDX(F, sep, REVERSE_ARGS(__VA_ARGS__))
+      |         ^~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:829:9: note: in expansion of macro 'FOR_EACH_IDX'
+  829 |         FOR_EACH_IDX(Z_CBPRINTF_PACK_ARG, (;), __VA_ARGS__);\
+      |         ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:866:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE_GENERIC'
+  866 |         Z_CBPRINTF_STATIC_PACKAGE_GENERIC(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf.h:387:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE'
+  387 |         Z_CBPRINTF_STATIC_PACKAGE(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:345:17: note: in expansion of macro 'CBPRINTF_STATIC_PACKAGE'
+  345 |                 CBPRINTF_STATIC_PACKAGE(_msg->data, _plen, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:543:17: note: in expansion of macro 'Z_LOG_MSG_STACK_CREATE'
+  543 |                 Z_LOG_MSG_STACK_CREATE(_cstr_cnt, _domain_id, _source, _level, _data, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:573:9: note: in expansion of macro 'Z_LOG_MSG_CREATE3'
+  573 |         Z_LOG_MSG_CREATE3(_try_0cpy, _mode,  _cstr_cnt, _domain_id, _source,\
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:582:9: note: in expansion of macro 'Z_LOG_MSG_CREATE2'
+  582 |         Z_LOG_MSG_CREATE2(_try_0cpy, _mode, UTIL_CAT(Z_LOG_FUNC_PREFIX_, _level), \
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:307:17: note: in expansion of macro 'Z_LOG_MSG_CREATE'
+  307 |                 Z_LOG_MSG_CREATE(UTIL_NOT(IS_ENABLED(CONFIG_USERSPACE)), _mode,                    \
+      |                 ^~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:318:44: note: in expansion of macro 'Z_LOG2'
+  318 | #define Z_LOG(_level, ...)                 Z_LOG2(_level, 0, Z_LOG_CURRENT_DATA(), __VA_ARGS__)
+      |                                            ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log.h:79:25: note: in expansion of macro 'Z_LOG'
+   79 | #define LOG_DBG(...)    Z_LOG(LOG_LEVEL_DBG, __VA_ARGS__)
+      |                         ^~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/drivers/mspi/mspi_dw.c:1601:9: note: in expansion of macro 'LOG_DBG'
+ 1601 |         LOG_DBG("DIR = %d", req->packet.dir);
+      |         ^~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:589:29: warning: declaration of '_v' shadows previous non-variable [-Wshadow]
+  589 |                 __auto_type _v = Z_ARGIFY(Z_CONSTIFY(arg)); \
+      |                             ^~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:589:29: note: in definition of macro 'Z_CBPRINTF_STORE_ARG'
+  589 |                 __auto_type _v = Z_ARGIFY(Z_CONSTIFY(arg)); \
+      |                             ^~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:726:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG2'
+  726 |         Z_CBPRINTF_PACK_ARG2(arg_idx, _pbuf, _pkg_len, _pkg_offset, _pmax, arg)
+      |         ^~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1069:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG'
+ 1069 |         fixed_arg0(idx, x)
+      |         ^~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:28:9: note: in expansion of macro 'Z_FOR_EACH_IDX_EXEC'
+   28 |         z_call(0, x, fixed_arg0, fixed_arg1)
+      |         ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:31:9: note: in expansion of macro 'Z_FOR_LOOP_1'
+   31 |         Z_FOR_LOOP_1(z_call, sep, fixed_arg0, fixed_arg1, ##__VA_ARGS__) \
+      |         ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:36:9: note: in expansion of macro 'Z_FOR_LOOP_2'
+   36 |         Z_FOR_LOOP_2(z_call, sep, fixed_arg0, fixed_arg1, ##__VA_ARGS__) \
+      |         ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:23:81: note: in expansion of macro 'Z_FOR_LOOP_3'
+   23 |                                 _57, _58, _59, _60, _61, _62, _63, _64, N, ...) N
+      |                                                                                 ^
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1072:9: note: in expansion of macro 'Z_FOR_EACH_ENGINE'
+ 1072 |         Z_FOR_EACH_ENGINE(Z_FOR_EACH_IDX_EXEC, sep, F, _, __VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:594:9: note: in expansion of macro 'Z_FOR_EACH_IDX'
+  594 |         Z_FOR_EACH_IDX(F, sep, REVERSE_ARGS(__VA_ARGS__))
+      |         ^~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:829:9: note: in expansion of macro 'FOR_EACH_IDX'
+  829 |         FOR_EACH_IDX(Z_CBPRINTF_PACK_ARG, (;), __VA_ARGS__);\
+      |         ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:866:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE_GENERIC'
+  866 |         Z_CBPRINTF_STATIC_PACKAGE_GENERIC(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf.h:387:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE'
+  387 |         Z_CBPRINTF_STATIC_PACKAGE(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:345:17: note: in expansion of macro 'CBPRINTF_STATIC_PACKAGE'
+  345 |                 CBPRINTF_STATIC_PACKAGE(_msg->data, _plen, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:543:17: note: in expansion of macro 'Z_LOG_MSG_STACK_CREATE'
+  543 |                 Z_LOG_MSG_STACK_CREATE(_cstr_cnt, _domain_id, _source, _level, _data, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:573:9: note: in expansion of macro 'Z_LOG_MSG_CREATE3'
+  573 |         Z_LOG_MSG_CREATE3(_try_0cpy, _mode,  _cstr_cnt, _domain_id, _source,\
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:582:9: note: in expansion of macro 'Z_LOG_MSG_CREATE2'
+  582 |         Z_LOG_MSG_CREATE2(_try_0cpy, _mode, UTIL_CAT(Z_LOG_FUNC_PREFIX_, _level), \
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:307:17: note: in expansion of macro 'Z_LOG_MSG_CREATE'
+  307 |                 Z_LOG_MSG_CREATE(UTIL_NOT(IS_ENABLED(CONFIG_USERSPACE)), _mode,                    \
+      |                 ^~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:318:44: note: in expansion of macro 'Z_LOG2'
+  318 | #define Z_LOG(_level, ...)                 Z_LOG2(_level, 0, Z_LOG_CURRENT_DATA(), __VA_ARGS__)
+      |                                            ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log.h:79:25: note: in expansion of macro 'Z_LOG'
+   79 | #define LOG_DBG(...)    Z_LOG(LOG_LEVEL_DBG, __VA_ARGS__)
+      |                         ^~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/drivers/mspi/mspi_dw.c:1601:9: note: in expansion of macro 'LOG_DBG'
+ 1601 |         LOG_DBG("DIR = %d", req->packet.dir);
+      |         ^~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:565:21: warning: declaration of '__v' shadows previous non-variable [-Wshadow]
+  565 |         __auto_type __v = Z_ARGIFY(Z_CONSTIFY(v)); \
+      |                     ^~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:565:21: note: in definition of macro 'Z_CBPRINTF_ARG_SIZE'
+  565 |         __auto_type __v = Z_ARGIFY(Z_CONSTIFY(v)); \
+      |                     ^~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:713:17: note: in expansion of macro 'Z_CBPRINTF_STORE_ARG'
+  713 |                 Z_CBPRINTF_STORE_ARG(&(_buf)[(_idx)], _arg); \
+      |                 ^~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:726:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG2'
+  726 |         Z_CBPRINTF_PACK_ARG2(arg_idx, _pbuf, _pkg_len, _pkg_offset, _pmax, arg)
+      |         ^~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1069:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG'
+ 1069 |         fixed_arg0(idx, x)
+      |         ^~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:28:9: note: in expansion of macro 'Z_FOR_EACH_IDX_EXEC'
+   28 |         z_call(0, x, fixed_arg0, fixed_arg1)
+      |         ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:31:9: note: in expansion of macro 'Z_FOR_LOOP_1'
+   31 |         Z_FOR_LOOP_1(z_call, sep, fixed_arg0, fixed_arg1, ##__VA_ARGS__) \
+      |         ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:36:9: note: in expansion of macro 'Z_FOR_LOOP_2'
+   36 |         Z_FOR_LOOP_2(z_call, sep, fixed_arg0, fixed_arg1, ##__VA_ARGS__) \
+      |         ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:23:81: note: in expansion of macro 'Z_FOR_LOOP_3'
+   23 |                                 _57, _58, _59, _60, _61, _62, _63, _64, N, ...) N
+      |                                                                                 ^
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1072:9: note: in expansion of macro 'Z_FOR_EACH_ENGINE'
+ 1072 |         Z_FOR_EACH_ENGINE(Z_FOR_EACH_IDX_EXEC, sep, F, _, __VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:594:9: note: in expansion of macro 'Z_FOR_EACH_IDX'
+  594 |         Z_FOR_EACH_IDX(F, sep, REVERSE_ARGS(__VA_ARGS__))
+      |         ^~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:829:9: note: in expansion of macro 'FOR_EACH_IDX'
+  829 |         FOR_EACH_IDX(Z_CBPRINTF_PACK_ARG, (;), __VA_ARGS__);\
+      |         ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:866:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE_GENERIC'
+  866 |         Z_CBPRINTF_STATIC_PACKAGE_GENERIC(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf.h:387:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE'
+  387 |         Z_CBPRINTF_STATIC_PACKAGE(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:345:17: note: in expansion of macro 'CBPRINTF_STATIC_PACKAGE'
+  345 |                 CBPRINTF_STATIC_PACKAGE(_msg->data, _plen, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:543:17: note: in expansion of macro 'Z_LOG_MSG_STACK_CREATE'
+  543 |                 Z_LOG_MSG_STACK_CREATE(_cstr_cnt, _domain_id, _source, _level, _data, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:573:9: note: in expansion of macro 'Z_LOG_MSG_CREATE3'
+  573 |         Z_LOG_MSG_CREATE3(_try_0cpy, _mode,  _cstr_cnt, _domain_id, _source,\
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:582:9: note: in expansion of macro 'Z_LOG_MSG_CREATE2'
+  582 |         Z_LOG_MSG_CREATE2(_try_0cpy, _mode, UTIL_CAT(Z_LOG_FUNC_PREFIX_, _level), \
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:307:17: note: in expansion of macro 'Z_LOG_MSG_CREATE'
+  307 |                 Z_LOG_MSG_CREATE(UTIL_NOT(IS_ENABLED(CONFIG_USERSPACE)), _mode,                    \
+      |                 ^~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:318:44: note: in expansion of macro 'Z_LOG2'
+  318 | #define Z_LOG(_level, ...)                 Z_LOG2(_level, 0, Z_LOG_CURRENT_DATA(), __VA_ARGS__)
+      |                                            ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log.h:79:25: note: in expansion of macro 'Z_LOG'
+   79 | #define LOG_DBG(...)    Z_LOG(LOG_LEVEL_DBG, __VA_ARGS__)
+      |                         ^~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/drivers/mspi/mspi_dw.c:1601:9: note: in expansion of macro 'LOG_DBG'
+ 1601 |         LOG_DBG("DIR = %d", req->packet.dir);
+      |         ^~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:565:21: warning: declaration of '__v' shadows previous non-variable [-Wshadow]
+  565 |         __auto_type __v = Z_ARGIFY(Z_CONSTIFY(v)); \
+      |                     ^~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:565:21: note: in definition of macro 'Z_CBPRINTF_ARG_SIZE'
+  565 |         __auto_type __v = Z_ARGIFY(Z_CONSTIFY(v)); \
+      |                     ^~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:726:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG2'
+  726 |         Z_CBPRINTF_PACK_ARG2(arg_idx, _pbuf, _pkg_len, _pkg_offset, _pmax, arg)
+      |         ^~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1069:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG'
+ 1069 |         fixed_arg0(idx, x)
+      |         ^~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:33:9: note: in expansion of macro 'Z_FOR_EACH_IDX_EXEC'
+   33 |         z_call(1, x, fixed_arg0, fixed_arg1)
+      |         ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:36:9: note: in expansion of macro 'Z_FOR_LOOP_2'
+   36 |         Z_FOR_LOOP_2(z_call, sep, fixed_arg0, fixed_arg1, ##__VA_ARGS__) \
+      |         ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:23:81: note: in expansion of macro 'Z_FOR_LOOP_3'
+   23 |                                 _57, _58, _59, _60, _61, _62, _63, _64, N, ...) N
+      |                                                                                 ^
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1072:9: note: in expansion of macro 'Z_FOR_EACH_ENGINE'
+ 1072 |         Z_FOR_EACH_ENGINE(Z_FOR_EACH_IDX_EXEC, sep, F, _, __VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:594:9: note: in expansion of macro 'Z_FOR_EACH_IDX'
+  594 |         Z_FOR_EACH_IDX(F, sep, REVERSE_ARGS(__VA_ARGS__))
+      |         ^~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:829:9: note: in expansion of macro 'FOR_EACH_IDX'
+  829 |         FOR_EACH_IDX(Z_CBPRINTF_PACK_ARG, (;), __VA_ARGS__);\
+      |         ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:866:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE_GENERIC'
+  866 |         Z_CBPRINTF_STATIC_PACKAGE_GENERIC(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf.h:387:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE'
+  387 |         Z_CBPRINTF_STATIC_PACKAGE(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:345:17: note: in expansion of macro 'CBPRINTF_STATIC_PACKAGE'
+  345 |                 CBPRINTF_STATIC_PACKAGE(_msg->data, _plen, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:543:17: note: in expansion of macro 'Z_LOG_MSG_STACK_CREATE'
+  543 |                 Z_LOG_MSG_STACK_CREATE(_cstr_cnt, _domain_id, _source, _level, _data, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:573:9: note: in expansion of macro 'Z_LOG_MSG_CREATE3'
+  573 |         Z_LOG_MSG_CREATE3(_try_0cpy, _mode,  _cstr_cnt, _domain_id, _source,\
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:582:9: note: in expansion of macro 'Z_LOG_MSG_CREATE2'
+  582 |         Z_LOG_MSG_CREATE2(_try_0cpy, _mode, UTIL_CAT(Z_LOG_FUNC_PREFIX_, _level), \
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:307:17: note: in expansion of macro 'Z_LOG_MSG_CREATE'
+  307 |                 Z_LOG_MSG_CREATE(UTIL_NOT(IS_ENABLED(CONFIG_USERSPACE)), _mode,                    \
+      |                 ^~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:318:44: note: in expansion of macro 'Z_LOG2'
+  318 | #define Z_LOG(_level, ...)                 Z_LOG2(_level, 0, Z_LOG_CURRENT_DATA(), __VA_ARGS__)
+      |                                            ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log.h:79:25: note: in expansion of macro 'Z_LOG'
+   79 | #define LOG_DBG(...)    Z_LOG(LOG_LEVEL_DBG, __VA_ARGS__)
+      |                         ^~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/drivers/mspi/mspi_dw.c:1601:9: note: in expansion of macro 'LOG_DBG'
+ 1601 |         LOG_DBG("DIR = %d", req->packet.dir);
+      |         ^~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:589:29: warning: declaration of '_v' shadows previous non-variable [-Wshadow]
+  589 |                 __auto_type _v = Z_ARGIFY(Z_CONSTIFY(arg)); \
+      |                             ^~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:589:29: note: in definition of macro 'Z_CBPRINTF_STORE_ARG'
+  589 |                 __auto_type _v = Z_ARGIFY(Z_CONSTIFY(arg)); \
+      |                             ^~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:726:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG2'
+  726 |         Z_CBPRINTF_PACK_ARG2(arg_idx, _pbuf, _pkg_len, _pkg_offset, _pmax, arg)
+      |         ^~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1069:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG'
+ 1069 |         fixed_arg0(idx, x)
+      |         ^~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:33:9: note: in expansion of macro 'Z_FOR_EACH_IDX_EXEC'
+   33 |         z_call(1, x, fixed_arg0, fixed_arg1)
+      |         ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:36:9: note: in expansion of macro 'Z_FOR_LOOP_2'
+   36 |         Z_FOR_LOOP_2(z_call, sep, fixed_arg0, fixed_arg1, ##__VA_ARGS__) \
+      |         ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:23:81: note: in expansion of macro 'Z_FOR_LOOP_3'
+   23 |                                 _57, _58, _59, _60, _61, _62, _63, _64, N, ...) N
+      |                                                                                 ^
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1072:9: note: in expansion of macro 'Z_FOR_EACH_ENGINE'
+ 1072 |         Z_FOR_EACH_ENGINE(Z_FOR_EACH_IDX_EXEC, sep, F, _, __VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:594:9: note: in expansion of macro 'Z_FOR_EACH_IDX'
+  594 |         Z_FOR_EACH_IDX(F, sep, REVERSE_ARGS(__VA_ARGS__))
+      |         ^~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:829:9: note: in expansion of macro 'FOR_EACH_IDX'
+  829 |         FOR_EACH_IDX(Z_CBPRINTF_PACK_ARG, (;), __VA_ARGS__);\
+      |         ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:866:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE_GENERIC'
+  866 |         Z_CBPRINTF_STATIC_PACKAGE_GENERIC(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf.h:387:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE'
+  387 |         Z_CBPRINTF_STATIC_PACKAGE(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:345:17: note: in expansion of macro 'CBPRINTF_STATIC_PACKAGE'
+  345 |                 CBPRINTF_STATIC_PACKAGE(_msg->data, _plen, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:543:17: note: in expansion of macro 'Z_LOG_MSG_STACK_CREATE'
+  543 |                 Z_LOG_MSG_STACK_CREATE(_cstr_cnt, _domain_id, _source, _level, _data, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:573:9: note: in expansion of macro 'Z_LOG_MSG_CREATE3'
+  573 |         Z_LOG_MSG_CREATE3(_try_0cpy, _mode,  _cstr_cnt, _domain_id, _source,\
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:582:9: note: in expansion of macro 'Z_LOG_MSG_CREATE2'
+  582 |         Z_LOG_MSG_CREATE2(_try_0cpy, _mode, UTIL_CAT(Z_LOG_FUNC_PREFIX_, _level), \
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:307:17: note: in expansion of macro 'Z_LOG_MSG_CREATE'
+  307 |                 Z_LOG_MSG_CREATE(UTIL_NOT(IS_ENABLED(CONFIG_USERSPACE)), _mode,                    \
+      |                 ^~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:318:44: note: in expansion of macro 'Z_LOG2'
+  318 | #define Z_LOG(_level, ...)                 Z_LOG2(_level, 0, Z_LOG_CURRENT_DATA(), __VA_ARGS__)
+      |                                            ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log.h:79:25: note: in expansion of macro 'Z_LOG'
+   79 | #define LOG_DBG(...)    Z_LOG(LOG_LEVEL_DBG, __VA_ARGS__)
+      |                         ^~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/drivers/mspi/mspi_dw.c:1601:9: note: in expansion of macro 'LOG_DBG'
+ 1601 |         LOG_DBG("DIR = %d", req->packet.dir);
+      |         ^~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:565:21: warning: declaration of '__v' shadows previous non-variable [-Wshadow]
+  565 |         __auto_type __v = Z_ARGIFY(Z_CONSTIFY(v)); \
+      |                     ^~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:565:21: note: in definition of macro 'Z_CBPRINTF_ARG_SIZE'
+  565 |         __auto_type __v = Z_ARGIFY(Z_CONSTIFY(v)); \
+      |                     ^~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:713:17: note: in expansion of macro 'Z_CBPRINTF_STORE_ARG'
+  713 |                 Z_CBPRINTF_STORE_ARG(&(_buf)[(_idx)], _arg); \
+      |                 ^~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:726:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG2'
+  726 |         Z_CBPRINTF_PACK_ARG2(arg_idx, _pbuf, _pkg_len, _pkg_offset, _pmax, arg)
+      |         ^~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1069:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG'
+ 1069 |         fixed_arg0(idx, x)
+      |         ^~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:33:9: note: in expansion of macro 'Z_FOR_EACH_IDX_EXEC'
+   33 |         z_call(1, x, fixed_arg0, fixed_arg1)
+      |         ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:36:9: note: in expansion of macro 'Z_FOR_LOOP_2'
+   36 |         Z_FOR_LOOP_2(z_call, sep, fixed_arg0, fixed_arg1, ##__VA_ARGS__) \
+      |         ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:23:81: note: in expansion of macro 'Z_FOR_LOOP_3'
+   23 |                                 _57, _58, _59, _60, _61, _62, _63, _64, N, ...) N
+      |                                                                                 ^
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1072:9: note: in expansion of macro 'Z_FOR_EACH_ENGINE'
+ 1072 |         Z_FOR_EACH_ENGINE(Z_FOR_EACH_IDX_EXEC, sep, F, _, __VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:594:9: note: in expansion of macro 'Z_FOR_EACH_IDX'
+  594 |         Z_FOR_EACH_IDX(F, sep, REVERSE_ARGS(__VA_ARGS__))
+      |         ^~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:829:9: note: in expansion of macro 'FOR_EACH_IDX'
+  829 |         FOR_EACH_IDX(Z_CBPRINTF_PACK_ARG, (;), __VA_ARGS__);\
+      |         ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:866:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE_GENERIC'
+  866 |         Z_CBPRINTF_STATIC_PACKAGE_GENERIC(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf.h:387:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE'
+  387 |         Z_CBPRINTF_STATIC_PACKAGE(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:345:17: note: in expansion of macro 'CBPRINTF_STATIC_PACKAGE'
+  345 |                 CBPRINTF_STATIC_PACKAGE(_msg->data, _plen, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:543:17: note: in expansion of macro 'Z_LOG_MSG_STACK_CREATE'
+  543 |                 Z_LOG_MSG_STACK_CREATE(_cstr_cnt, _domain_id, _source, _level, _data, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:573:9: note: in expansion of macro 'Z_LOG_MSG_CREATE3'
+  573 |         Z_LOG_MSG_CREATE3(_try_0cpy, _mode,  _cstr_cnt, _domain_id, _source,\
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:582:9: note: in expansion of macro 'Z_LOG_MSG_CREATE2'
+  582 |         Z_LOG_MSG_CREATE2(_try_0cpy, _mode, UTIL_CAT(Z_LOG_FUNC_PREFIX_, _level), \
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:307:17: note: in expansion of macro 'Z_LOG_MSG_CREATE'
+  307 |                 Z_LOG_MSG_CREATE(UTIL_NOT(IS_ENABLED(CONFIG_USERSPACE)), _mode,                    \
+      |                 ^~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:318:44: note: in expansion of macro 'Z_LOG2'
+  318 | #define Z_LOG(_level, ...)                 Z_LOG2(_level, 0, Z_LOG_CURRENT_DATA(), __VA_ARGS__)
+      |                                            ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log.h:79:25: note: in expansion of macro 'Z_LOG'
+   79 | #define LOG_DBG(...)    Z_LOG(LOG_LEVEL_DBG, __VA_ARGS__)
+      |                         ^~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/drivers/mspi/mspi_dw.c:1601:9: note: in expansion of macro 'LOG_DBG'
+ 1601 |         LOG_DBG("DIR = %d", req->packet.dir);
+      |         ^~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/toolchain/gcc.h:87:51: error: expression in static assertion is not an integer
+   87 | #define BUILD_ASSERT(EXPR, MSG...) _Static_assert((EXPR), "" MSG)
+      |                                                   ^
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:681:9: note: in expansion of macro 'BUILD_ASSERT'
+  681 |         BUILD_ASSERT(!((sizeof(double) < VA_STACK_ALIGN(long double)) && \
+      |         ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:726:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG2'
+  726 |         Z_CBPRINTF_PACK_ARG2(arg_idx, _pbuf, _pkg_len, _pkg_offset, _pmax, arg)
+      |         ^~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1069:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG'
+ 1069 |         fixed_arg0(idx, x)
+      |         ^~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:38:9: note: in expansion of macro 'Z_FOR_EACH_IDX_EXEC'
+   38 |         z_call(2, x, fixed_arg0, fixed_arg1)
+      |         ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:23:81: note: in expansion of macro 'Z_FOR_LOOP_3'
+   23 |                                 _57, _58, _59, _60, _61, _62, _63, _64, N, ...) N
+      |                                                                                 ^
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1072:9: note: in expansion of macro 'Z_FOR_EACH_ENGINE'
+ 1072 |         Z_FOR_EACH_ENGINE(Z_FOR_EACH_IDX_EXEC, sep, F, _, __VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:594:9: note: in expansion of macro 'Z_FOR_EACH_IDX'
+  594 |         Z_FOR_EACH_IDX(F, sep, REVERSE_ARGS(__VA_ARGS__))
+      |         ^~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:829:9: note: in expansion of macro 'FOR_EACH_IDX'
+  829 |         FOR_EACH_IDX(Z_CBPRINTF_PACK_ARG, (;), __VA_ARGS__);\
+      |         ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:866:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE_GENERIC'
+  866 |         Z_CBPRINTF_STATIC_PACKAGE_GENERIC(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf.h:387:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE'
+  387 |         Z_CBPRINTF_STATIC_PACKAGE(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:345:17: note: in expansion of macro 'CBPRINTF_STATIC_PACKAGE'
+  345 |                 CBPRINTF_STATIC_PACKAGE(_msg->data, _plen, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:543:17: note: in expansion of macro 'Z_LOG_MSG_STACK_CREATE'
+  543 |                 Z_LOG_MSG_STACK_CREATE(_cstr_cnt, _domain_id, _source, _level, _data, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:573:9: note: in expansion of macro 'Z_LOG_MSG_CREATE3'
+  573 |         Z_LOG_MSG_CREATE3(_try_0cpy, _mode,  _cstr_cnt, _domain_id, _source,\
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:582:9: note: in expansion of macro 'Z_LOG_MSG_CREATE2'
+  582 |         Z_LOG_MSG_CREATE2(_try_0cpy, _mode, UTIL_CAT(Z_LOG_FUNC_PREFIX_, _level), \
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:307:17: note: in expansion of macro 'Z_LOG_MSG_CREATE'
+  307 |                 Z_LOG_MSG_CREATE(UTIL_NOT(IS_ENABLED(CONFIG_USERSPACE)), _mode,                    \
+      |                 ^~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:318:44: note: in expansion of macro 'Z_LOG2'
+  318 | #define Z_LOG(_level, ...)                 Z_LOG2(_level, 0, Z_LOG_CURRENT_DATA(), __VA_ARGS__)
+      |                                            ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log.h:79:25: note: in expansion of macro 'Z_LOG'
+   79 | #define LOG_DBG(...)    Z_LOG(LOG_LEVEL_DBG, __VA_ARGS__)
+      |                         ^~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/drivers/mspi/mspi_dw.c:1601:9: note: in expansion of macro 'LOG_DBG'
+ 1601 |         LOG_DBG("DIR = %d", req->packet.dir);
+      |         ^~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/drivers/mspi/mspi_dw.c:1601:34: error: 'const struct mspi_xfer' has no member named 'packet'; did you mean 'packets'?
+ 1601 |         LOG_DBG("DIR = %d", req->packet.dir);
+      |                                  ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:314:50: note: in definition of macro 'Z_LOG2'
+  314 |                         z_log_printf_arg_checker(__VA_ARGS__);                                     \
+      |                                                  ^~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log.h:79:25: note: in expansion of macro 'Z_LOG'
+   79 | #define LOG_DBG(...)    Z_LOG(LOG_LEVEL_DBG, __VA_ARGS__)
+      |                         ^~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/drivers/mspi/mspi_dw.c:1601:9: note: in expansion of macro 'LOG_DBG'
+ 1601 |         LOG_DBG("DIR = %d", req->packet.dir);
+      |         ^~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:565:21: warning: declaration of '__v' shadows previous non-variable [-Wshadow]
+  565 |         __auto_type __v = Z_ARGIFY(Z_CONSTIFY(v)); \
+      |                     ^~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:565:21: note: in definition of macro 'Z_CBPRINTF_ARG_SIZE'
+  565 |         __auto_type __v = Z_ARGIFY(Z_CONSTIFY(v)); \
+      |                     ^~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:726:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG2'
+  726 |         Z_CBPRINTF_PACK_ARG2(arg_idx, _pbuf, _pkg_len, _pkg_offset, _pmax, arg)
+      |         ^~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1069:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG'
+ 1069 |         fixed_arg0(idx, x)
+      |         ^~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:28:9: note: in expansion of macro 'Z_FOR_EACH_IDX_EXEC'
+   28 |         z_call(0, x, fixed_arg0, fixed_arg1)
+      |         ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:31:9: note: in expansion of macro 'Z_FOR_LOOP_1'
+   31 |         Z_FOR_LOOP_1(z_call, sep, fixed_arg0, fixed_arg1, ##__VA_ARGS__) \
+      |         ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:23:81: note: in expansion of macro 'Z_FOR_LOOP_2'
+   23 |                                 _57, _58, _59, _60, _61, _62, _63, _64, N, ...) N
+      |                                                                                 ^
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1072:9: note: in expansion of macro 'Z_FOR_EACH_ENGINE'
+ 1072 |         Z_FOR_EACH_ENGINE(Z_FOR_EACH_IDX_EXEC, sep, F, _, __VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:594:9: note: in expansion of macro 'Z_FOR_EACH_IDX'
+  594 |         Z_FOR_EACH_IDX(F, sep, REVERSE_ARGS(__VA_ARGS__))
+      |         ^~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:829:9: note: in expansion of macro 'FOR_EACH_IDX'
+  829 |         FOR_EACH_IDX(Z_CBPRINTF_PACK_ARG, (;), __VA_ARGS__);\
+      |         ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:866:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE_GENERIC'
+  866 |         Z_CBPRINTF_STATIC_PACKAGE_GENERIC(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf.h:387:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE'
+  387 |         Z_CBPRINTF_STATIC_PACKAGE(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:336:17: note: in expansion of macro 'CBPRINTF_STATIC_PACKAGE'
+  336 |                 CBPRINTF_STATIC_PACKAGE(NULL, 0, _plen, Z_LOG_MSG_ALIGN_OFFSET, _options, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:543:17: note: in expansion of macro 'Z_LOG_MSG_STACK_CREATE'
+  543 |                 Z_LOG_MSG_STACK_CREATE(_cstr_cnt, _domain_id, _source, _level, _data, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:573:9: note: in expansion of macro 'Z_LOG_MSG_CREATE3'
+  573 |         Z_LOG_MSG_CREATE3(_try_0cpy, _mode,  _cstr_cnt, _domain_id, _source,\
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:582:9: note: in expansion of macro 'Z_LOG_MSG_CREATE2'
+  582 |         Z_LOG_MSG_CREATE2(_try_0cpy, _mode, UTIL_CAT(Z_LOG_FUNC_PREFIX_, _level), \
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:307:17: note: in expansion of macro 'Z_LOG_MSG_CREATE'
+  307 |                 Z_LOG_MSG_CREATE(UTIL_NOT(IS_ENABLED(CONFIG_USERSPACE)), _mode,                    \
+      |                 ^~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:318:44: note: in expansion of macro 'Z_LOG2'
+  318 | #define Z_LOG(_level, ...)                 Z_LOG2(_level, 0, Z_LOG_CURRENT_DATA(), __VA_ARGS__)
+      |                                            ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log.h:79:25: note: in expansion of macro 'Z_LOG'
+   79 | #define LOG_DBG(...)    Z_LOG(LOG_LEVEL_DBG, __VA_ARGS__)
+      |                         ^~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/drivers/mspi/mspi_dw.c:1607:25: note: in expansion of macro 'LOG_DBG'
+ 1607 |                         LOG_DBG("starting next packet");
+      |                         ^~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:589:29: warning: declaration of '_v' shadows previous non-variable [-Wshadow]
+  589 |                 __auto_type _v = Z_ARGIFY(Z_CONSTIFY(arg)); \
+      |                             ^~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:589:29: note: in definition of macro 'Z_CBPRINTF_STORE_ARG'
+  589 |                 __auto_type _v = Z_ARGIFY(Z_CONSTIFY(arg)); \
+      |                             ^~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:726:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG2'
+  726 |         Z_CBPRINTF_PACK_ARG2(arg_idx, _pbuf, _pkg_len, _pkg_offset, _pmax, arg)
+      |         ^~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1069:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG'
+ 1069 |         fixed_arg0(idx, x)
+      |         ^~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:28:9: note: in expansion of macro 'Z_FOR_EACH_IDX_EXEC'
+   28 |         z_call(0, x, fixed_arg0, fixed_arg1)
+      |         ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:31:9: note: in expansion of macro 'Z_FOR_LOOP_1'
+   31 |         Z_FOR_LOOP_1(z_call, sep, fixed_arg0, fixed_arg1, ##__VA_ARGS__) \
+      |         ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:23:81: note: in expansion of macro 'Z_FOR_LOOP_2'
+   23 |                                 _57, _58, _59, _60, _61, _62, _63, _64, N, ...) N
+      |                                                                                 ^
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1072:9: note: in expansion of macro 'Z_FOR_EACH_ENGINE'
+ 1072 |         Z_FOR_EACH_ENGINE(Z_FOR_EACH_IDX_EXEC, sep, F, _, __VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:594:9: note: in expansion of macro 'Z_FOR_EACH_IDX'
+  594 |         Z_FOR_EACH_IDX(F, sep, REVERSE_ARGS(__VA_ARGS__))
+      |         ^~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:829:9: note: in expansion of macro 'FOR_EACH_IDX'
+  829 |         FOR_EACH_IDX(Z_CBPRINTF_PACK_ARG, (;), __VA_ARGS__);\
+      |         ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:866:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE_GENERIC'
+  866 |         Z_CBPRINTF_STATIC_PACKAGE_GENERIC(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf.h:387:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE'
+  387 |         Z_CBPRINTF_STATIC_PACKAGE(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:336:17: note: in expansion of macro 'CBPRINTF_STATIC_PACKAGE'
+  336 |                 CBPRINTF_STATIC_PACKAGE(NULL, 0, _plen, Z_LOG_MSG_ALIGN_OFFSET, _options, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:543:17: note: in expansion of macro 'Z_LOG_MSG_STACK_CREATE'
+  543 |                 Z_LOG_MSG_STACK_CREATE(_cstr_cnt, _domain_id, _source, _level, _data, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:573:9: note: in expansion of macro 'Z_LOG_MSG_CREATE3'
+  573 |         Z_LOG_MSG_CREATE3(_try_0cpy, _mode,  _cstr_cnt, _domain_id, _source,\
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:582:9: note: in expansion of macro 'Z_LOG_MSG_CREATE2'
+  582 |         Z_LOG_MSG_CREATE2(_try_0cpy, _mode, UTIL_CAT(Z_LOG_FUNC_PREFIX_, _level), \
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:307:17: note: in expansion of macro 'Z_LOG_MSG_CREATE'
+  307 |                 Z_LOG_MSG_CREATE(UTIL_NOT(IS_ENABLED(CONFIG_USERSPACE)), _mode,                    \
+      |                 ^~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:318:44: note: in expansion of macro 'Z_LOG2'
+  318 | #define Z_LOG(_level, ...)                 Z_LOG2(_level, 0, Z_LOG_CURRENT_DATA(), __VA_ARGS__)
+      |                                            ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log.h:79:25: note: in expansion of macro 'Z_LOG'
+   79 | #define LOG_DBG(...)    Z_LOG(LOG_LEVEL_DBG, __VA_ARGS__)
+      |                         ^~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/drivers/mspi/mspi_dw.c:1607:25: note: in expansion of macro 'LOG_DBG'
+ 1607 |                         LOG_DBG("starting next packet");
+      |                         ^~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:565:21: warning: declaration of '__v' shadows previous non-variable [-Wshadow]
+  565 |         __auto_type __v = Z_ARGIFY(Z_CONSTIFY(v)); \
+      |                     ^~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:565:21: note: in definition of macro 'Z_CBPRINTF_ARG_SIZE'
+  565 |         __auto_type __v = Z_ARGIFY(Z_CONSTIFY(v)); \
+      |                     ^~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:713:17: note: in expansion of macro 'Z_CBPRINTF_STORE_ARG'
+  713 |                 Z_CBPRINTF_STORE_ARG(&(_buf)[(_idx)], _arg); \
+      |                 ^~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:726:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG2'
+  726 |         Z_CBPRINTF_PACK_ARG2(arg_idx, _pbuf, _pkg_len, _pkg_offset, _pmax, arg)
+      |         ^~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1069:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG'
+ 1069 |         fixed_arg0(idx, x)
+      |         ^~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:28:9: note: in expansion of macro 'Z_FOR_EACH_IDX_EXEC'
+   28 |         z_call(0, x, fixed_arg0, fixed_arg1)
+      |         ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:31:9: note: in expansion of macro 'Z_FOR_LOOP_1'
+   31 |         Z_FOR_LOOP_1(z_call, sep, fixed_arg0, fixed_arg1, ##__VA_ARGS__) \
+      |         ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:23:81: note: in expansion of macro 'Z_FOR_LOOP_2'
+   23 |                                 _57, _58, _59, _60, _61, _62, _63, _64, N, ...) N
+      |                                                                                 ^
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1072:9: note: in expansion of macro 'Z_FOR_EACH_ENGINE'
+ 1072 |         Z_FOR_EACH_ENGINE(Z_FOR_EACH_IDX_EXEC, sep, F, _, __VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:594:9: note: in expansion of macro 'Z_FOR_EACH_IDX'
+  594 |         Z_FOR_EACH_IDX(F, sep, REVERSE_ARGS(__VA_ARGS__))
+      |         ^~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:829:9: note: in expansion of macro 'FOR_EACH_IDX'
+  829 |         FOR_EACH_IDX(Z_CBPRINTF_PACK_ARG, (;), __VA_ARGS__);\
+      |         ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:866:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE_GENERIC'
+  866 |         Z_CBPRINTF_STATIC_PACKAGE_GENERIC(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf.h:387:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE'
+  387 |         Z_CBPRINTF_STATIC_PACKAGE(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:336:17: note: in expansion of macro 'CBPRINTF_STATIC_PACKAGE'
+  336 |                 CBPRINTF_STATIC_PACKAGE(NULL, 0, _plen, Z_LOG_MSG_ALIGN_OFFSET, _options, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:543:17: note: in expansion of macro 'Z_LOG_MSG_STACK_CREATE'
+  543 |                 Z_LOG_MSG_STACK_CREATE(_cstr_cnt, _domain_id, _source, _level, _data, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:573:9: note: in expansion of macro 'Z_LOG_MSG_CREATE3'
+  573 |         Z_LOG_MSG_CREATE3(_try_0cpy, _mode,  _cstr_cnt, _domain_id, _source,\
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:582:9: note: in expansion of macro 'Z_LOG_MSG_CREATE2'
+  582 |         Z_LOG_MSG_CREATE2(_try_0cpy, _mode, UTIL_CAT(Z_LOG_FUNC_PREFIX_, _level), \
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:307:17: note: in expansion of macro 'Z_LOG_MSG_CREATE'
+  307 |                 Z_LOG_MSG_CREATE(UTIL_NOT(IS_ENABLED(CONFIG_USERSPACE)), _mode,                    \
+      |                 ^~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:318:44: note: in expansion of macro 'Z_LOG2'
+  318 | #define Z_LOG(_level, ...)                 Z_LOG2(_level, 0, Z_LOG_CURRENT_DATA(), __VA_ARGS__)
+      |                                            ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log.h:79:25: note: in expansion of macro 'Z_LOG'
+   79 | #define LOG_DBG(...)    Z_LOG(LOG_LEVEL_DBG, __VA_ARGS__)
+      |                         ^~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/drivers/mspi/mspi_dw.c:1607:25: note: in expansion of macro 'LOG_DBG'
+ 1607 |                         LOG_DBG("starting next packet");
+      |                         ^~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:565:21: warning: declaration of '__v' shadows previous non-variable [-Wshadow]
+  565 |         __auto_type __v = Z_ARGIFY(Z_CONSTIFY(v)); \
+      |                     ^~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:565:21: note: in definition of macro 'Z_CBPRINTF_ARG_SIZE'
+  565 |         __auto_type __v = Z_ARGIFY(Z_CONSTIFY(v)); \
+      |                     ^~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:726:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG2'
+  726 |         Z_CBPRINTF_PACK_ARG2(arg_idx, _pbuf, _pkg_len, _pkg_offset, _pmax, arg)
+      |         ^~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1069:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG'
+ 1069 |         fixed_arg0(idx, x)
+      |         ^~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:33:9: note: in expansion of macro 'Z_FOR_EACH_IDX_EXEC'
+   33 |         z_call(1, x, fixed_arg0, fixed_arg1)
+      |         ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:23:81: note: in expansion of macro 'Z_FOR_LOOP_2'
+   23 |                                 _57, _58, _59, _60, _61, _62, _63, _64, N, ...) N
+      |                                                                                 ^
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1072:9: note: in expansion of macro 'Z_FOR_EACH_ENGINE'
+ 1072 |         Z_FOR_EACH_ENGINE(Z_FOR_EACH_IDX_EXEC, sep, F, _, __VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:594:9: note: in expansion of macro 'Z_FOR_EACH_IDX'
+  594 |         Z_FOR_EACH_IDX(F, sep, REVERSE_ARGS(__VA_ARGS__))
+      |         ^~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:829:9: note: in expansion of macro 'FOR_EACH_IDX'
+  829 |         FOR_EACH_IDX(Z_CBPRINTF_PACK_ARG, (;), __VA_ARGS__);\
+      |         ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:866:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE_GENERIC'
+  866 |         Z_CBPRINTF_STATIC_PACKAGE_GENERIC(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf.h:387:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE'
+  387 |         Z_CBPRINTF_STATIC_PACKAGE(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:336:17: note: in expansion of macro 'CBPRINTF_STATIC_PACKAGE'
+  336 |                 CBPRINTF_STATIC_PACKAGE(NULL, 0, _plen, Z_LOG_MSG_ALIGN_OFFSET, _options, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:543:17: note: in expansion of macro 'Z_LOG_MSG_STACK_CREATE'
+  543 |                 Z_LOG_MSG_STACK_CREATE(_cstr_cnt, _domain_id, _source, _level, _data, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:573:9: note: in expansion of macro 'Z_LOG_MSG_CREATE3'
+  573 |         Z_LOG_MSG_CREATE3(_try_0cpy, _mode,  _cstr_cnt, _domain_id, _source,\
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:582:9: note: in expansion of macro 'Z_LOG_MSG_CREATE2'
+  582 |         Z_LOG_MSG_CREATE2(_try_0cpy, _mode, UTIL_CAT(Z_LOG_FUNC_PREFIX_, _level), \
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:307:17: note: in expansion of macro 'Z_LOG_MSG_CREATE'
+  307 |                 Z_LOG_MSG_CREATE(UTIL_NOT(IS_ENABLED(CONFIG_USERSPACE)), _mode,                    \
+      |                 ^~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:318:44: note: in expansion of macro 'Z_LOG2'
+  318 | #define Z_LOG(_level, ...)                 Z_LOG2(_level, 0, Z_LOG_CURRENT_DATA(), __VA_ARGS__)
+      |                                            ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log.h:79:25: note: in expansion of macro 'Z_LOG'
+   79 | #define LOG_DBG(...)    Z_LOG(LOG_LEVEL_DBG, __VA_ARGS__)
+      |                         ^~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/drivers/mspi/mspi_dw.c:1607:25: note: in expansion of macro 'LOG_DBG'
+ 1607 |                         LOG_DBG("starting next packet");
+      |                         ^~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:589:29: warning: declaration of '_v' shadows previous non-variable [-Wshadow]
+  589 |                 __auto_type _v = Z_ARGIFY(Z_CONSTIFY(arg)); \
+      |                             ^~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:589:29: note: in definition of macro 'Z_CBPRINTF_STORE_ARG'
+  589 |                 __auto_type _v = Z_ARGIFY(Z_CONSTIFY(arg)); \
+      |                             ^~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:726:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG2'
+  726 |         Z_CBPRINTF_PACK_ARG2(arg_idx, _pbuf, _pkg_len, _pkg_offset, _pmax, arg)
+      |         ^~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1069:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG'
+ 1069 |         fixed_arg0(idx, x)
+      |         ^~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:33:9: note: in expansion of macro 'Z_FOR_EACH_IDX_EXEC'
+   33 |         z_call(1, x, fixed_arg0, fixed_arg1)
+      |         ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:23:81: note: in expansion of macro 'Z_FOR_LOOP_2'
+   23 |                                 _57, _58, _59, _60, _61, _62, _63, _64, N, ...) N
+      |                                                                                 ^
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1072:9: note: in expansion of macro 'Z_FOR_EACH_ENGINE'
+ 1072 |         Z_FOR_EACH_ENGINE(Z_FOR_EACH_IDX_EXEC, sep, F, _, __VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:594:9: note: in expansion of macro 'Z_FOR_EACH_IDX'
+  594 |         Z_FOR_EACH_IDX(F, sep, REVERSE_ARGS(__VA_ARGS__))
+      |         ^~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:829:9: note: in expansion of macro 'FOR_EACH_IDX'
+  829 |         FOR_EACH_IDX(Z_CBPRINTF_PACK_ARG, (;), __VA_ARGS__);\
+      |         ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:866:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE_GENERIC'
+  866 |         Z_CBPRINTF_STATIC_PACKAGE_GENERIC(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf.h:387:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE'
+  387 |         Z_CBPRINTF_STATIC_PACKAGE(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:336:17: note: in expansion of macro 'CBPRINTF_STATIC_PACKAGE'
+  336 |                 CBPRINTF_STATIC_PACKAGE(NULL, 0, _plen, Z_LOG_MSG_ALIGN_OFFSET, _options, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:543:17: note: in expansion of macro 'Z_LOG_MSG_STACK_CREATE'
+  543 |                 Z_LOG_MSG_STACK_CREATE(_cstr_cnt, _domain_id, _source, _level, _data, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:573:9: note: in expansion of macro 'Z_LOG_MSG_CREATE3'
+  573 |         Z_LOG_MSG_CREATE3(_try_0cpy, _mode,  _cstr_cnt, _domain_id, _source,\
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:582:9: note: in expansion of macro 'Z_LOG_MSG_CREATE2'
+  582 |         Z_LOG_MSG_CREATE2(_try_0cpy, _mode, UTIL_CAT(Z_LOG_FUNC_PREFIX_, _level), \
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:307:17: note: in expansion of macro 'Z_LOG_MSG_CREATE'
+  307 |                 Z_LOG_MSG_CREATE(UTIL_NOT(IS_ENABLED(CONFIG_USERSPACE)), _mode,                    \
+      |                 ^~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:318:44: note: in expansion of macro 'Z_LOG2'
+  318 | #define Z_LOG(_level, ...)                 Z_LOG2(_level, 0, Z_LOG_CURRENT_DATA(), __VA_ARGS__)
+      |                                            ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log.h:79:25: note: in expansion of macro 'Z_LOG'
+   79 | #define LOG_DBG(...)    Z_LOG(LOG_LEVEL_DBG, __VA_ARGS__)
+      |                         ^~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/drivers/mspi/mspi_dw.c:1607:25: note: in expansion of macro 'LOG_DBG'
+ 1607 |                         LOG_DBG("starting next packet");
+      |                         ^~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:565:21: warning: declaration of '__v' shadows previous non-variable [-Wshadow]
+  565 |         __auto_type __v = Z_ARGIFY(Z_CONSTIFY(v)); \
+      |                     ^~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:565:21: note: in definition of macro 'Z_CBPRINTF_ARG_SIZE'
+  565 |         __auto_type __v = Z_ARGIFY(Z_CONSTIFY(v)); \
+      |                     ^~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:713:17: note: in expansion of macro 'Z_CBPRINTF_STORE_ARG'
+  713 |                 Z_CBPRINTF_STORE_ARG(&(_buf)[(_idx)], _arg); \
+      |                 ^~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:726:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG2'
+  726 |         Z_CBPRINTF_PACK_ARG2(arg_idx, _pbuf, _pkg_len, _pkg_offset, _pmax, arg)
+      |         ^~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1069:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG'
+ 1069 |         fixed_arg0(idx, x)
+      |         ^~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:33:9: note: in expansion of macro 'Z_FOR_EACH_IDX_EXEC'
+   33 |         z_call(1, x, fixed_arg0, fixed_arg1)
+      |         ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:23:81: note: in expansion of macro 'Z_FOR_LOOP_2'
+   23 |                                 _57, _58, _59, _60, _61, _62, _63, _64, N, ...) N
+      |                                                                                 ^
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1072:9: note: in expansion of macro 'Z_FOR_EACH_ENGINE'
+ 1072 |         Z_FOR_EACH_ENGINE(Z_FOR_EACH_IDX_EXEC, sep, F, _, __VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:594:9: note: in expansion of macro 'Z_FOR_EACH_IDX'
+  594 |         Z_FOR_EACH_IDX(F, sep, REVERSE_ARGS(__VA_ARGS__))
+      |         ^~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:829:9: note: in expansion of macro 'FOR_EACH_IDX'
+  829 |         FOR_EACH_IDX(Z_CBPRINTF_PACK_ARG, (;), __VA_ARGS__);\
+      |         ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:866:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE_GENERIC'
+  866 |         Z_CBPRINTF_STATIC_PACKAGE_GENERIC(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf.h:387:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE'
+  387 |         Z_CBPRINTF_STATIC_PACKAGE(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:336:17: note: in expansion of macro 'CBPRINTF_STATIC_PACKAGE'
+  336 |                 CBPRINTF_STATIC_PACKAGE(NULL, 0, _plen, Z_LOG_MSG_ALIGN_OFFSET, _options, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:543:17: note: in expansion of macro 'Z_LOG_MSG_STACK_CREATE'
+  543 |                 Z_LOG_MSG_STACK_CREATE(_cstr_cnt, _domain_id, _source, _level, _data, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:573:9: note: in expansion of macro 'Z_LOG_MSG_CREATE3'
+  573 |         Z_LOG_MSG_CREATE3(_try_0cpy, _mode,  _cstr_cnt, _domain_id, _source,\
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:582:9: note: in expansion of macro 'Z_LOG_MSG_CREATE2'
+  582 |         Z_LOG_MSG_CREATE2(_try_0cpy, _mode, UTIL_CAT(Z_LOG_FUNC_PREFIX_, _level), \
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:307:17: note: in expansion of macro 'Z_LOG_MSG_CREATE'
+  307 |                 Z_LOG_MSG_CREATE(UTIL_NOT(IS_ENABLED(CONFIG_USERSPACE)), _mode,                    \
+      |                 ^~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:318:44: note: in expansion of macro 'Z_LOG2'
+  318 | #define Z_LOG(_level, ...)                 Z_LOG2(_level, 0, Z_LOG_CURRENT_DATA(), __VA_ARGS__)
+      |                                            ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log.h:79:25: note: in expansion of macro 'Z_LOG'
+   79 | #define LOG_DBG(...)    Z_LOG(LOG_LEVEL_DBG, __VA_ARGS__)
+      |                         ^~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/drivers/mspi/mspi_dw.c:1607:25: note: in expansion of macro 'LOG_DBG'
+ 1607 |                         LOG_DBG("starting next packet");
+      |                         ^~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:565:21: warning: declaration of '__v' shadows previous non-variable [-Wshadow]
+  565 |         __auto_type __v = Z_ARGIFY(Z_CONSTIFY(v)); \
+      |                     ^~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:565:21: note: in definition of macro 'Z_CBPRINTF_ARG_SIZE'
+  565 |         __auto_type __v = Z_ARGIFY(Z_CONSTIFY(v)); \
+      |                     ^~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:726:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG2'
+  726 |         Z_CBPRINTF_PACK_ARG2(arg_idx, _pbuf, _pkg_len, _pkg_offset, _pmax, arg)
+      |         ^~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1069:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG'
+ 1069 |         fixed_arg0(idx, x)
+      |         ^~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:28:9: note: in expansion of macro 'Z_FOR_EACH_IDX_EXEC'
+   28 |         z_call(0, x, fixed_arg0, fixed_arg1)
+      |         ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:31:9: note: in expansion of macro 'Z_FOR_LOOP_1'
+   31 |         Z_FOR_LOOP_1(z_call, sep, fixed_arg0, fixed_arg1, ##__VA_ARGS__) \
+      |         ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:23:81: note: in expansion of macro 'Z_FOR_LOOP_2'
+   23 |                                 _57, _58, _59, _60, _61, _62, _63, _64, N, ...) N
+      |                                                                                 ^
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1072:9: note: in expansion of macro 'Z_FOR_EACH_ENGINE'
+ 1072 |         Z_FOR_EACH_ENGINE(Z_FOR_EACH_IDX_EXEC, sep, F, _, __VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:594:9: note: in expansion of macro 'Z_FOR_EACH_IDX'
+  594 |         Z_FOR_EACH_IDX(F, sep, REVERSE_ARGS(__VA_ARGS__))
+      |         ^~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:829:9: note: in expansion of macro 'FOR_EACH_IDX'
+  829 |         FOR_EACH_IDX(Z_CBPRINTF_PACK_ARG, (;), __VA_ARGS__);\
+      |         ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:866:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE_GENERIC'
+  866 |         Z_CBPRINTF_STATIC_PACKAGE_GENERIC(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf.h:387:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE'
+  387 |         Z_CBPRINTF_STATIC_PACKAGE(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:345:17: note: in expansion of macro 'CBPRINTF_STATIC_PACKAGE'
+  345 |                 CBPRINTF_STATIC_PACKAGE(_msg->data, _plen, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:543:17: note: in expansion of macro 'Z_LOG_MSG_STACK_CREATE'
+  543 |                 Z_LOG_MSG_STACK_CREATE(_cstr_cnt, _domain_id, _source, _level, _data, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:573:9: note: in expansion of macro 'Z_LOG_MSG_CREATE3'
+  573 |         Z_LOG_MSG_CREATE3(_try_0cpy, _mode,  _cstr_cnt, _domain_id, _source,\
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:582:9: note: in expansion of macro 'Z_LOG_MSG_CREATE2'
+  582 |         Z_LOG_MSG_CREATE2(_try_0cpy, _mode, UTIL_CAT(Z_LOG_FUNC_PREFIX_, _level), \
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:307:17: note: in expansion of macro 'Z_LOG_MSG_CREATE'
+  307 |                 Z_LOG_MSG_CREATE(UTIL_NOT(IS_ENABLED(CONFIG_USERSPACE)), _mode,                    \
+      |                 ^~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:318:44: note: in expansion of macro 'Z_LOG2'
+  318 | #define Z_LOG(_level, ...)                 Z_LOG2(_level, 0, Z_LOG_CURRENT_DATA(), __VA_ARGS__)
+      |                                            ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log.h:79:25: note: in expansion of macro 'Z_LOG'
+   79 | #define LOG_DBG(...)    Z_LOG(LOG_LEVEL_DBG, __VA_ARGS__)
+      |                         ^~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/drivers/mspi/mspi_dw.c:1607:25: note: in expansion of macro 'LOG_DBG'
+ 1607 |                         LOG_DBG("starting next packet");
+      |                         ^~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:589:29: warning: declaration of '_v' shadows previous non-variable [-Wshadow]
+  589 |                 __auto_type _v = Z_ARGIFY(Z_CONSTIFY(arg)); \
+      |                             ^~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:589:29: note: in definition of macro 'Z_CBPRINTF_STORE_ARG'
+  589 |                 __auto_type _v = Z_ARGIFY(Z_CONSTIFY(arg)); \
+      |                             ^~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:726:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG2'
+  726 |         Z_CBPRINTF_PACK_ARG2(arg_idx, _pbuf, _pkg_len, _pkg_offset, _pmax, arg)
+      |         ^~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1069:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG'
+ 1069 |         fixed_arg0(idx, x)
+      |         ^~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:28:9: note: in expansion of macro 'Z_FOR_EACH_IDX_EXEC'
+   28 |         z_call(0, x, fixed_arg0, fixed_arg1)
+      |         ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:31:9: note: in expansion of macro 'Z_FOR_LOOP_1'
+   31 |         Z_FOR_LOOP_1(z_call, sep, fixed_arg0, fixed_arg1, ##__VA_ARGS__) \
+      |         ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:23:81: note: in expansion of macro 'Z_FOR_LOOP_2'
+   23 |                                 _57, _58, _59, _60, _61, _62, _63, _64, N, ...) N
+      |                                                                                 ^
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1072:9: note: in expansion of macro 'Z_FOR_EACH_ENGINE'
+ 1072 |         Z_FOR_EACH_ENGINE(Z_FOR_EACH_IDX_EXEC, sep, F, _, __VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:594:9: note: in expansion of macro 'Z_FOR_EACH_IDX'
+  594 |         Z_FOR_EACH_IDX(F, sep, REVERSE_ARGS(__VA_ARGS__))
+      |         ^~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:829:9: note: in expansion of macro 'FOR_EACH_IDX'
+  829 |         FOR_EACH_IDX(Z_CBPRINTF_PACK_ARG, (;), __VA_ARGS__);\
+      |         ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:866:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE_GENERIC'
+  866 |         Z_CBPRINTF_STATIC_PACKAGE_GENERIC(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf.h:387:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE'
+  387 |         Z_CBPRINTF_STATIC_PACKAGE(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:345:17: note: in expansion of macro 'CBPRINTF_STATIC_PACKAGE'
+  345 |                 CBPRINTF_STATIC_PACKAGE(_msg->data, _plen, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:543:17: note: in expansion of macro 'Z_LOG_MSG_STACK_CREATE'
+  543 |                 Z_LOG_MSG_STACK_CREATE(_cstr_cnt, _domain_id, _source, _level, _data, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:573:9: note: in expansion of macro 'Z_LOG_MSG_CREATE3'
+  573 |         Z_LOG_MSG_CREATE3(_try_0cpy, _mode,  _cstr_cnt, _domain_id, _source,\
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:582:9: note: in expansion of macro 'Z_LOG_MSG_CREATE2'
+  582 |         Z_LOG_MSG_CREATE2(_try_0cpy, _mode, UTIL_CAT(Z_LOG_FUNC_PREFIX_, _level), \
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:307:17: note: in expansion of macro 'Z_LOG_MSG_CREATE'
+  307 |                 Z_LOG_MSG_CREATE(UTIL_NOT(IS_ENABLED(CONFIG_USERSPACE)), _mode,                    \
+      |                 ^~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:318:44: note: in expansion of macro 'Z_LOG2'
+  318 | #define Z_LOG(_level, ...)                 Z_LOG2(_level, 0, Z_LOG_CURRENT_DATA(), __VA_ARGS__)
+      |                                            ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log.h:79:25: note: in expansion of macro 'Z_LOG'
+   79 | #define LOG_DBG(...)    Z_LOG(LOG_LEVEL_DBG, __VA_ARGS__)
+      |                         ^~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/drivers/mspi/mspi_dw.c:1607:25: note: in expansion of macro 'LOG_DBG'
+ 1607 |                         LOG_DBG("starting next packet");
+      |                         ^~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:565:21: warning: declaration of '__v' shadows previous non-variable [-Wshadow]
+  565 |         __auto_type __v = Z_ARGIFY(Z_CONSTIFY(v)); \
+      |                     ^~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:565:21: note: in definition of macro 'Z_CBPRINTF_ARG_SIZE'
+  565 |         __auto_type __v = Z_ARGIFY(Z_CONSTIFY(v)); \
+      |                     ^~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:713:17: note: in expansion of macro 'Z_CBPRINTF_STORE_ARG'
+  713 |                 Z_CBPRINTF_STORE_ARG(&(_buf)[(_idx)], _arg); \
+      |                 ^~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:726:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG2'
+  726 |         Z_CBPRINTF_PACK_ARG2(arg_idx, _pbuf, _pkg_len, _pkg_offset, _pmax, arg)
+      |         ^~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1069:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG'
+ 1069 |         fixed_arg0(idx, x)
+      |         ^~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:28:9: note: in expansion of macro 'Z_FOR_EACH_IDX_EXEC'
+   28 |         z_call(0, x, fixed_arg0, fixed_arg1)
+      |         ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:31:9: note: in expansion of macro 'Z_FOR_LOOP_1'
+   31 |         Z_FOR_LOOP_1(z_call, sep, fixed_arg0, fixed_arg1, ##__VA_ARGS__) \
+      |         ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:23:81: note: in expansion of macro 'Z_FOR_LOOP_2'
+   23 |                                 _57, _58, _59, _60, _61, _62, _63, _64, N, ...) N
+      |                                                                                 ^
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1072:9: note: in expansion of macro 'Z_FOR_EACH_ENGINE'
+ 1072 |         Z_FOR_EACH_ENGINE(Z_FOR_EACH_IDX_EXEC, sep, F, _, __VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:594:9: note: in expansion of macro 'Z_FOR_EACH_IDX'
+  594 |         Z_FOR_EACH_IDX(F, sep, REVERSE_ARGS(__VA_ARGS__))
+      |         ^~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:829:9: note: in expansion of macro 'FOR_EACH_IDX'
+  829 |         FOR_EACH_IDX(Z_CBPRINTF_PACK_ARG, (;), __VA_ARGS__);\
+      |         ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:866:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE_GENERIC'
+  866 |         Z_CBPRINTF_STATIC_PACKAGE_GENERIC(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf.h:387:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE'
+  387 |         Z_CBPRINTF_STATIC_PACKAGE(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:345:17: note: in expansion of macro 'CBPRINTF_STATIC_PACKAGE'
+  345 |                 CBPRINTF_STATIC_PACKAGE(_msg->data, _plen, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:543:17: note: in expansion of macro 'Z_LOG_MSG_STACK_CREATE'
+  543 |                 Z_LOG_MSG_STACK_CREATE(_cstr_cnt, _domain_id, _source, _level, _data, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:573:9: note: in expansion of macro 'Z_LOG_MSG_CREATE3'
+  573 |         Z_LOG_MSG_CREATE3(_try_0cpy, _mode,  _cstr_cnt, _domain_id, _source,\
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:582:9: note: in expansion of macro 'Z_LOG_MSG_CREATE2'
+  582 |         Z_LOG_MSG_CREATE2(_try_0cpy, _mode, UTIL_CAT(Z_LOG_FUNC_PREFIX_, _level), \
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:307:17: note: in expansion of macro 'Z_LOG_MSG_CREATE'
+  307 |                 Z_LOG_MSG_CREATE(UTIL_NOT(IS_ENABLED(CONFIG_USERSPACE)), _mode,                    \
+      |                 ^~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:318:44: note: in expansion of macro 'Z_LOG2'
+  318 | #define Z_LOG(_level, ...)                 Z_LOG2(_level, 0, Z_LOG_CURRENT_DATA(), __VA_ARGS__)
+      |                                            ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log.h:79:25: note: in expansion of macro 'Z_LOG'
+   79 | #define LOG_DBG(...)    Z_LOG(LOG_LEVEL_DBG, __VA_ARGS__)
+      |                         ^~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/drivers/mspi/mspi_dw.c:1607:25: note: in expansion of macro 'LOG_DBG'
+ 1607 |                         LOG_DBG("starting next packet");
+      |                         ^~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:565:21: warning: declaration of '__v' shadows previous non-variable [-Wshadow]
+  565 |         __auto_type __v = Z_ARGIFY(Z_CONSTIFY(v)); \
+      |                     ^~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:565:21: note: in definition of macro 'Z_CBPRINTF_ARG_SIZE'
+  565 |         __auto_type __v = Z_ARGIFY(Z_CONSTIFY(v)); \
+      |                     ^~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:726:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG2'
+  726 |         Z_CBPRINTF_PACK_ARG2(arg_idx, _pbuf, _pkg_len, _pkg_offset, _pmax, arg)
+      |         ^~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1069:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG'
+ 1069 |         fixed_arg0(idx, x)
+      |         ^~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:33:9: note: in expansion of macro 'Z_FOR_EACH_IDX_EXEC'
+   33 |         z_call(1, x, fixed_arg0, fixed_arg1)
+      |         ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:23:81: note: in expansion of macro 'Z_FOR_LOOP_2'
+   23 |                                 _57, _58, _59, _60, _61, _62, _63, _64, N, ...) N
+      |                                                                                 ^
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1072:9: note: in expansion of macro 'Z_FOR_EACH_ENGINE'
+ 1072 |         Z_FOR_EACH_ENGINE(Z_FOR_EACH_IDX_EXEC, sep, F, _, __VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:594:9: note: in expansion of macro 'Z_FOR_EACH_IDX'
+  594 |         Z_FOR_EACH_IDX(F, sep, REVERSE_ARGS(__VA_ARGS__))
+      |         ^~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:829:9: note: in expansion of macro 'FOR_EACH_IDX'
+  829 |         FOR_EACH_IDX(Z_CBPRINTF_PACK_ARG, (;), __VA_ARGS__);\
+      |         ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:866:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE_GENERIC'
+  866 |         Z_CBPRINTF_STATIC_PACKAGE_GENERIC(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf.h:387:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE'
+  387 |         Z_CBPRINTF_STATIC_PACKAGE(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:345:17: note: in expansion of macro 'CBPRINTF_STATIC_PACKAGE'
+  345 |                 CBPRINTF_STATIC_PACKAGE(_msg->data, _plen, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:543:17: note: in expansion of macro 'Z_LOG_MSG_STACK_CREATE'
+  543 |                 Z_LOG_MSG_STACK_CREATE(_cstr_cnt, _domain_id, _source, _level, _data, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:573:9: note: in expansion of macro 'Z_LOG_MSG_CREATE3'
+  573 |         Z_LOG_MSG_CREATE3(_try_0cpy, _mode,  _cstr_cnt, _domain_id, _source,\
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:582:9: note: in expansion of macro 'Z_LOG_MSG_CREATE2'
+  582 |         Z_LOG_MSG_CREATE2(_try_0cpy, _mode, UTIL_CAT(Z_LOG_FUNC_PREFIX_, _level), \
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:307:17: note: in expansion of macro 'Z_LOG_MSG_CREATE'
+  307 |                 Z_LOG_MSG_CREATE(UTIL_NOT(IS_ENABLED(CONFIG_USERSPACE)), _mode,                    \
+      |                 ^~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:318:44: note: in expansion of macro 'Z_LOG2'
+  318 | #define Z_LOG(_level, ...)                 Z_LOG2(_level, 0, Z_LOG_CURRENT_DATA(), __VA_ARGS__)
+      |                                            ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log.h:79:25: note: in expansion of macro 'Z_LOG'
+   79 | #define LOG_DBG(...)    Z_LOG(LOG_LEVEL_DBG, __VA_ARGS__)
+      |                         ^~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/drivers/mspi/mspi_dw.c:1607:25: note: in expansion of macro 'LOG_DBG'
+ 1607 |                         LOG_DBG("starting next packet");
+      |                         ^~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:589:29: warning: declaration of '_v' shadows previous non-variable [-Wshadow]
+  589 |                 __auto_type _v = Z_ARGIFY(Z_CONSTIFY(arg)); \
+      |                             ^~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:589:29: note: in definition of macro 'Z_CBPRINTF_STORE_ARG'
+  589 |                 __auto_type _v = Z_ARGIFY(Z_CONSTIFY(arg)); \
+      |                             ^~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:726:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG2'
+  726 |         Z_CBPRINTF_PACK_ARG2(arg_idx, _pbuf, _pkg_len, _pkg_offset, _pmax, arg)
+      |         ^~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1069:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG'
+ 1069 |         fixed_arg0(idx, x)
+      |         ^~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:33:9: note: in expansion of macro 'Z_FOR_EACH_IDX_EXEC'
+   33 |         z_call(1, x, fixed_arg0, fixed_arg1)
+      |         ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:23:81: note: in expansion of macro 'Z_FOR_LOOP_2'
+   23 |                                 _57, _58, _59, _60, _61, _62, _63, _64, N, ...) N
+      |                                                                                 ^
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1072:9: note: in expansion of macro 'Z_FOR_EACH_ENGINE'
+ 1072 |         Z_FOR_EACH_ENGINE(Z_FOR_EACH_IDX_EXEC, sep, F, _, __VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:594:9: note: in expansion of macro 'Z_FOR_EACH_IDX'
+  594 |         Z_FOR_EACH_IDX(F, sep, REVERSE_ARGS(__VA_ARGS__))
+      |         ^~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:829:9: note: in expansion of macro 'FOR_EACH_IDX'
+  829 |         FOR_EACH_IDX(Z_CBPRINTF_PACK_ARG, (;), __VA_ARGS__);\
+      |         ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:866:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE_GENERIC'
+  866 |         Z_CBPRINTF_STATIC_PACKAGE_GENERIC(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf.h:387:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE'
+  387 |         Z_CBPRINTF_STATIC_PACKAGE(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:345:17: note: in expansion of macro 'CBPRINTF_STATIC_PACKAGE'
+  345 |                 CBPRINTF_STATIC_PACKAGE(_msg->data, _plen, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:543:17: note: in expansion of macro 'Z_LOG_MSG_STACK_CREATE'
+  543 |                 Z_LOG_MSG_STACK_CREATE(_cstr_cnt, _domain_id, _source, _level, _data, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:573:9: note: in expansion of macro 'Z_LOG_MSG_CREATE3'
+  573 |         Z_LOG_MSG_CREATE3(_try_0cpy, _mode,  _cstr_cnt, _domain_id, _source,\
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:582:9: note: in expansion of macro 'Z_LOG_MSG_CREATE2'
+  582 |         Z_LOG_MSG_CREATE2(_try_0cpy, _mode, UTIL_CAT(Z_LOG_FUNC_PREFIX_, _level), \
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:307:17: note: in expansion of macro 'Z_LOG_MSG_CREATE'
+  307 |                 Z_LOG_MSG_CREATE(UTIL_NOT(IS_ENABLED(CONFIG_USERSPACE)), _mode,                    \
+      |                 ^~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:318:44: note: in expansion of macro 'Z_LOG2'
+  318 | #define Z_LOG(_level, ...)                 Z_LOG2(_level, 0, Z_LOG_CURRENT_DATA(), __VA_ARGS__)
+      |                                            ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log.h:79:25: note: in expansion of macro 'Z_LOG'
+   79 | #define LOG_DBG(...)    Z_LOG(LOG_LEVEL_DBG, __VA_ARGS__)
+      |                         ^~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/drivers/mspi/mspi_dw.c:1607:25: note: in expansion of macro 'LOG_DBG'
+ 1607 |                         LOG_DBG("starting next packet");
+      |                         ^~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:565:21: warning: declaration of '__v' shadows previous non-variable [-Wshadow]
+  565 |         __auto_type __v = Z_ARGIFY(Z_CONSTIFY(v)); \
+      |                     ^~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:565:21: note: in definition of macro 'Z_CBPRINTF_ARG_SIZE'
+  565 |         __auto_type __v = Z_ARGIFY(Z_CONSTIFY(v)); \
+      |                     ^~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:713:17: note: in expansion of macro 'Z_CBPRINTF_STORE_ARG'
+  713 |                 Z_CBPRINTF_STORE_ARG(&(_buf)[(_idx)], _arg); \
+      |                 ^~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:726:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG2'
+  726 |         Z_CBPRINTF_PACK_ARG2(arg_idx, _pbuf, _pkg_len, _pkg_offset, _pmax, arg)
+      |         ^~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1069:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG'
+ 1069 |         fixed_arg0(idx, x)
+      |         ^~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:33:9: note: in expansion of macro 'Z_FOR_EACH_IDX_EXEC'
+   33 |         z_call(1, x, fixed_arg0, fixed_arg1)
+      |         ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:23:81: note: in expansion of macro 'Z_FOR_LOOP_2'
+   23 |                                 _57, _58, _59, _60, _61, _62, _63, _64, N, ...) N
+      |                                                                                 ^
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1072:9: note: in expansion of macro 'Z_FOR_EACH_ENGINE'
+ 1072 |         Z_FOR_EACH_ENGINE(Z_FOR_EACH_IDX_EXEC, sep, F, _, __VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:594:9: note: in expansion of macro 'Z_FOR_EACH_IDX'
+  594 |         Z_FOR_EACH_IDX(F, sep, REVERSE_ARGS(__VA_ARGS__))
+      |         ^~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:829:9: note: in expansion of macro 'FOR_EACH_IDX'
+  829 |         FOR_EACH_IDX(Z_CBPRINTF_PACK_ARG, (;), __VA_ARGS__);\
+      |         ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:866:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE_GENERIC'
+  866 |         Z_CBPRINTF_STATIC_PACKAGE_GENERIC(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf.h:387:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE'
+  387 |         Z_CBPRINTF_STATIC_PACKAGE(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:345:17: note: in expansion of macro 'CBPRINTF_STATIC_PACKAGE'
+  345 |                 CBPRINTF_STATIC_PACKAGE(_msg->data, _plen, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:543:17: note: in expansion of macro 'Z_LOG_MSG_STACK_CREATE'
+  543 |                 Z_LOG_MSG_STACK_CREATE(_cstr_cnt, _domain_id, _source, _level, _data, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:573:9: note: in expansion of macro 'Z_LOG_MSG_CREATE3'
+  573 |         Z_LOG_MSG_CREATE3(_try_0cpy, _mode,  _cstr_cnt, _domain_id, _source,\
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:582:9: note: in expansion of macro 'Z_LOG_MSG_CREATE2'
+  582 |         Z_LOG_MSG_CREATE2(_try_0cpy, _mode, UTIL_CAT(Z_LOG_FUNC_PREFIX_, _level), \
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:307:17: note: in expansion of macro 'Z_LOG_MSG_CREATE'
+  307 |                 Z_LOG_MSG_CREATE(UTIL_NOT(IS_ENABLED(CONFIG_USERSPACE)), _mode,                    \
+      |                 ^~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:318:44: note: in expansion of macro 'Z_LOG2'
+  318 | #define Z_LOG(_level, ...)                 Z_LOG2(_level, 0, Z_LOG_CURRENT_DATA(), __VA_ARGS__)
+      |                                            ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log.h:79:25: note: in expansion of macro 'Z_LOG'
+   79 | #define LOG_DBG(...)    Z_LOG(LOG_LEVEL_DBG, __VA_ARGS__)
+      |                         ^~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/drivers/mspi/mspi_dw.c:1607:25: note: in expansion of macro 'LOG_DBG'
+ 1607 |                         LOG_DBG("starting next packet");
+      |                         ^~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:565:21: warning: declaration of '__v' shadows previous non-variable [-Wshadow]
+  565 |         __auto_type __v = Z_ARGIFY(Z_CONSTIFY(v)); \
+      |                     ^~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:565:21: note: in definition of macro 'Z_CBPRINTF_ARG_SIZE'
+  565 |         __auto_type __v = Z_ARGIFY(Z_CONSTIFY(v)); \
+      |                     ^~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:726:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG2'
+  726 |         Z_CBPRINTF_PACK_ARG2(arg_idx, _pbuf, _pkg_len, _pkg_offset, _pmax, arg)
+      |         ^~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1069:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG'
+ 1069 |         fixed_arg0(idx, x)
+      |         ^~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:28:9: note: in expansion of macro 'Z_FOR_EACH_IDX_EXEC'
+   28 |         z_call(0, x, fixed_arg0, fixed_arg1)
+      |         ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:23:81: note: in expansion of macro 'Z_FOR_LOOP_1'
+   23 |                                 _57, _58, _59, _60, _61, _62, _63, _64, N, ...) N
+      |                                                                                 ^
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1072:9: note: in expansion of macro 'Z_FOR_EACH_ENGINE'
+ 1072 |         Z_FOR_EACH_ENGINE(Z_FOR_EACH_IDX_EXEC, sep, F, _, __VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:594:9: note: in expansion of macro 'Z_FOR_EACH_IDX'
+  594 |         Z_FOR_EACH_IDX(F, sep, REVERSE_ARGS(__VA_ARGS__))
+      |         ^~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:829:9: note: in expansion of macro 'FOR_EACH_IDX'
+  829 |         FOR_EACH_IDX(Z_CBPRINTF_PACK_ARG, (;), __VA_ARGS__);\
+      |         ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:866:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE_GENERIC'
+  866 |         Z_CBPRINTF_STATIC_PACKAGE_GENERIC(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf.h:387:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE'
+  387 |         Z_CBPRINTF_STATIC_PACKAGE(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:336:17: note: in expansion of macro 'CBPRINTF_STATIC_PACKAGE'
+  336 |                 CBPRINTF_STATIC_PACKAGE(NULL, 0, _plen, Z_LOG_MSG_ALIGN_OFFSET, _options, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:543:17: note: in expansion of macro 'Z_LOG_MSG_STACK_CREATE'
+  543 |                 Z_LOG_MSG_STACK_CREATE(_cstr_cnt, _domain_id, _source, _level, _data, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:573:9: note: in expansion of macro 'Z_LOG_MSG_CREATE3'
+  573 |         Z_LOG_MSG_CREATE3(_try_0cpy, _mode,  _cstr_cnt, _domain_id, _source,\
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:582:9: note: in expansion of macro 'Z_LOG_MSG_CREATE2'
+  582 |         Z_LOG_MSG_CREATE2(_try_0cpy, _mode, UTIL_CAT(Z_LOG_FUNC_PREFIX_, _level), \
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:307:17: note: in expansion of macro 'Z_LOG_MSG_CREATE'
+  307 |                 Z_LOG_MSG_CREATE(UTIL_NOT(IS_ENABLED(CONFIG_USERSPACE)), _mode,                    \
+      |                 ^~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:318:44: note: in expansion of macro 'Z_LOG2'
+  318 | #define Z_LOG(_level, ...)                 Z_LOG2(_level, 0, Z_LOG_CURRENT_DATA(), __VA_ARGS__)
+      |                                            ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log.h:48:25: note: in expansion of macro 'Z_LOG'
+   48 | #define LOG_ERR(...)    Z_LOG(LOG_LEVEL_ERR, __VA_ARGS__)
+      |                         ^~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/drivers/mspi/mspi_dw.c:1615:33: note: in expansion of macro 'LOG_ERR'
+ 1615 |                                 LOG_ERR("Xfer mode not supported");
+      |                                 ^~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:589:29: warning: declaration of '_v' shadows previous non-variable [-Wshadow]
+  589 |                 __auto_type _v = Z_ARGIFY(Z_CONSTIFY(arg)); \
+      |                             ^~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:589:29: note: in definition of macro 'Z_CBPRINTF_STORE_ARG'
+  589 |                 __auto_type _v = Z_ARGIFY(Z_CONSTIFY(arg)); \
+      |                             ^~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:726:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG2'
+  726 |         Z_CBPRINTF_PACK_ARG2(arg_idx, _pbuf, _pkg_len, _pkg_offset, _pmax, arg)
+      |         ^~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1069:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG'
+ 1069 |         fixed_arg0(idx, x)
+      |         ^~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:28:9: note: in expansion of macro 'Z_FOR_EACH_IDX_EXEC'
+   28 |         z_call(0, x, fixed_arg0, fixed_arg1)
+      |         ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:23:81: note: in expansion of macro 'Z_FOR_LOOP_1'
+   23 |                                 _57, _58, _59, _60, _61, _62, _63, _64, N, ...) N
+      |                                                                                 ^
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1072:9: note: in expansion of macro 'Z_FOR_EACH_ENGINE'
+ 1072 |         Z_FOR_EACH_ENGINE(Z_FOR_EACH_IDX_EXEC, sep, F, _, __VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:594:9: note: in expansion of macro 'Z_FOR_EACH_IDX'
+  594 |         Z_FOR_EACH_IDX(F, sep, REVERSE_ARGS(__VA_ARGS__))
+      |         ^~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:829:9: note: in expansion of macro 'FOR_EACH_IDX'
+  829 |         FOR_EACH_IDX(Z_CBPRINTF_PACK_ARG, (;), __VA_ARGS__);\
+      |         ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:866:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE_GENERIC'
+  866 |         Z_CBPRINTF_STATIC_PACKAGE_GENERIC(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf.h:387:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE'
+  387 |         Z_CBPRINTF_STATIC_PACKAGE(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:336:17: note: in expansion of macro 'CBPRINTF_STATIC_PACKAGE'
+  336 |                 CBPRINTF_STATIC_PACKAGE(NULL, 0, _plen, Z_LOG_MSG_ALIGN_OFFSET, _options, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:543:17: note: in expansion of macro 'Z_LOG_MSG_STACK_CREATE'
+  543 |                 Z_LOG_MSG_STACK_CREATE(_cstr_cnt, _domain_id, _source, _level, _data, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:573:9: note: in expansion of macro 'Z_LOG_MSG_CREATE3'
+  573 |         Z_LOG_MSG_CREATE3(_try_0cpy, _mode,  _cstr_cnt, _domain_id, _source,\
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:582:9: note: in expansion of macro 'Z_LOG_MSG_CREATE2'
+  582 |         Z_LOG_MSG_CREATE2(_try_0cpy, _mode, UTIL_CAT(Z_LOG_FUNC_PREFIX_, _level), \
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:307:17: note: in expansion of macro 'Z_LOG_MSG_CREATE'
+  307 |                 Z_LOG_MSG_CREATE(UTIL_NOT(IS_ENABLED(CONFIG_USERSPACE)), _mode,                    \
+      |                 ^~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:318:44: note: in expansion of macro 'Z_LOG2'
+  318 | #define Z_LOG(_level, ...)                 Z_LOG2(_level, 0, Z_LOG_CURRENT_DATA(), __VA_ARGS__)
+      |                                            ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log.h:48:25: note: in expansion of macro 'Z_LOG'
+   48 | #define LOG_ERR(...)    Z_LOG(LOG_LEVEL_ERR, __VA_ARGS__)
+      |                         ^~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/drivers/mspi/mspi_dw.c:1615:33: note: in expansion of macro 'LOG_ERR'
+ 1615 |                                 LOG_ERR("Xfer mode not supported");
+      |                                 ^~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:565:21: warning: declaration of '__v' shadows previous non-variable [-Wshadow]
+  565 |         __auto_type __v = Z_ARGIFY(Z_CONSTIFY(v)); \
+      |                     ^~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:565:21: note: in definition of macro 'Z_CBPRINTF_ARG_SIZE'
+  565 |         __auto_type __v = Z_ARGIFY(Z_CONSTIFY(v)); \
+      |                     ^~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:713:17: note: in expansion of macro 'Z_CBPRINTF_STORE_ARG'
+  713 |                 Z_CBPRINTF_STORE_ARG(&(_buf)[(_idx)], _arg); \
+      |                 ^~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:726:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG2'
+  726 |         Z_CBPRINTF_PACK_ARG2(arg_idx, _pbuf, _pkg_len, _pkg_offset, _pmax, arg)
+      |         ^~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1069:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG'
+ 1069 |         fixed_arg0(idx, x)
+      |         ^~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:28:9: note: in expansion of macro 'Z_FOR_EACH_IDX_EXEC'
+   28 |         z_call(0, x, fixed_arg0, fixed_arg1)
+      |         ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:23:81: note: in expansion of macro 'Z_FOR_LOOP_1'
+   23 |                                 _57, _58, _59, _60, _61, _62, _63, _64, N, ...) N
+      |                                                                                 ^
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1072:9: note: in expansion of macro 'Z_FOR_EACH_ENGINE'
+ 1072 |         Z_FOR_EACH_ENGINE(Z_FOR_EACH_IDX_EXEC, sep, F, _, __VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:594:9: note: in expansion of macro 'Z_FOR_EACH_IDX'
+  594 |         Z_FOR_EACH_IDX(F, sep, REVERSE_ARGS(__VA_ARGS__))
+      |         ^~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:829:9: note: in expansion of macro 'FOR_EACH_IDX'
+  829 |         FOR_EACH_IDX(Z_CBPRINTF_PACK_ARG, (;), __VA_ARGS__);\
+      |         ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:866:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE_GENERIC'
+  866 |         Z_CBPRINTF_STATIC_PACKAGE_GENERIC(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf.h:387:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE'
+  387 |         Z_CBPRINTF_STATIC_PACKAGE(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:336:17: note: in expansion of macro 'CBPRINTF_STATIC_PACKAGE'
+  336 |                 CBPRINTF_STATIC_PACKAGE(NULL, 0, _plen, Z_LOG_MSG_ALIGN_OFFSET, _options, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:543:17: note: in expansion of macro 'Z_LOG_MSG_STACK_CREATE'
+  543 |                 Z_LOG_MSG_STACK_CREATE(_cstr_cnt, _domain_id, _source, _level, _data, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:573:9: note: in expansion of macro 'Z_LOG_MSG_CREATE3'
+  573 |         Z_LOG_MSG_CREATE3(_try_0cpy, _mode,  _cstr_cnt, _domain_id, _source,\
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:582:9: note: in expansion of macro 'Z_LOG_MSG_CREATE2'
+  582 |         Z_LOG_MSG_CREATE2(_try_0cpy, _mode, UTIL_CAT(Z_LOG_FUNC_PREFIX_, _level), \
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:307:17: note: in expansion of macro 'Z_LOG_MSG_CREATE'
+  307 |                 Z_LOG_MSG_CREATE(UTIL_NOT(IS_ENABLED(CONFIG_USERSPACE)), _mode,                    \
+      |                 ^~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:318:44: note: in expansion of macro 'Z_LOG2'
+  318 | #define Z_LOG(_level, ...)                 Z_LOG2(_level, 0, Z_LOG_CURRENT_DATA(), __VA_ARGS__)
+      |                                            ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log.h:48:25: note: in expansion of macro 'Z_LOG'
+   48 | #define LOG_ERR(...)    Z_LOG(LOG_LEVEL_ERR, __VA_ARGS__)
+      |                         ^~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/drivers/mspi/mspi_dw.c:1615:33: note: in expansion of macro 'LOG_ERR'
+ 1615 |                                 LOG_ERR("Xfer mode not supported");
+      |                                 ^~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:565:21: warning: declaration of '__v' shadows previous non-variable [-Wshadow]
+  565 |         __auto_type __v = Z_ARGIFY(Z_CONSTIFY(v)); \
+      |                     ^~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:565:21: note: in definition of macro 'Z_CBPRINTF_ARG_SIZE'
+  565 |         __auto_type __v = Z_ARGIFY(Z_CONSTIFY(v)); \
+      |                     ^~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:726:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG2'
+  726 |         Z_CBPRINTF_PACK_ARG2(arg_idx, _pbuf, _pkg_len, _pkg_offset, _pmax, arg)
+      |         ^~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1069:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG'
+ 1069 |         fixed_arg0(idx, x)
+      |         ^~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:28:9: note: in expansion of macro 'Z_FOR_EACH_IDX_EXEC'
+   28 |         z_call(0, x, fixed_arg0, fixed_arg1)
+      |         ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:23:81: note: in expansion of macro 'Z_FOR_LOOP_1'
+   23 |                                 _57, _58, _59, _60, _61, _62, _63, _64, N, ...) N
+      |                                                                                 ^
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1072:9: note: in expansion of macro 'Z_FOR_EACH_ENGINE'
+ 1072 |         Z_FOR_EACH_ENGINE(Z_FOR_EACH_IDX_EXEC, sep, F, _, __VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:594:9: note: in expansion of macro 'Z_FOR_EACH_IDX'
+  594 |         Z_FOR_EACH_IDX(F, sep, REVERSE_ARGS(__VA_ARGS__))
+      |         ^~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:829:9: note: in expansion of macro 'FOR_EACH_IDX'
+  829 |         FOR_EACH_IDX(Z_CBPRINTF_PACK_ARG, (;), __VA_ARGS__);\
+      |         ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:866:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE_GENERIC'
+  866 |         Z_CBPRINTF_STATIC_PACKAGE_GENERIC(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf.h:387:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE'
+  387 |         Z_CBPRINTF_STATIC_PACKAGE(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:345:17: note: in expansion of macro 'CBPRINTF_STATIC_PACKAGE'
+  345 |                 CBPRINTF_STATIC_PACKAGE(_msg->data, _plen, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:543:17: note: in expansion of macro 'Z_LOG_MSG_STACK_CREATE'
+  543 |                 Z_LOG_MSG_STACK_CREATE(_cstr_cnt, _domain_id, _source, _level, _data, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:573:9: note: in expansion of macro 'Z_LOG_MSG_CREATE3'
+  573 |         Z_LOG_MSG_CREATE3(_try_0cpy, _mode,  _cstr_cnt, _domain_id, _source,\
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:582:9: note: in expansion of macro 'Z_LOG_MSG_CREATE2'
+  582 |         Z_LOG_MSG_CREATE2(_try_0cpy, _mode, UTIL_CAT(Z_LOG_FUNC_PREFIX_, _level), \
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:307:17: note: in expansion of macro 'Z_LOG_MSG_CREATE'
+  307 |                 Z_LOG_MSG_CREATE(UTIL_NOT(IS_ENABLED(CONFIG_USERSPACE)), _mode,                    \
+      |                 ^~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:318:44: note: in expansion of macro 'Z_LOG2'
+  318 | #define Z_LOG(_level, ...)                 Z_LOG2(_level, 0, Z_LOG_CURRENT_DATA(), __VA_ARGS__)
+      |                                            ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log.h:48:25: note: in expansion of macro 'Z_LOG'
+   48 | #define LOG_ERR(...)    Z_LOG(LOG_LEVEL_ERR, __VA_ARGS__)
+      |                         ^~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/drivers/mspi/mspi_dw.c:1615:33: note: in expansion of macro 'LOG_ERR'
+ 1615 |                                 LOG_ERR("Xfer mode not supported");
+      |                                 ^~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:589:29: warning: declaration of '_v' shadows previous non-variable [-Wshadow]
+  589 |                 __auto_type _v = Z_ARGIFY(Z_CONSTIFY(arg)); \
+      |                             ^~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:589:29: note: in definition of macro 'Z_CBPRINTF_STORE_ARG'
+  589 |                 __auto_type _v = Z_ARGIFY(Z_CONSTIFY(arg)); \
+      |                             ^~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:726:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG2'
+  726 |         Z_CBPRINTF_PACK_ARG2(arg_idx, _pbuf, _pkg_len, _pkg_offset, _pmax, arg)
+      |         ^~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1069:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG'
+ 1069 |         fixed_arg0(idx, x)
+      |         ^~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:28:9: note: in expansion of macro 'Z_FOR_EACH_IDX_EXEC'
+   28 |         z_call(0, x, fixed_arg0, fixed_arg1)
+      |         ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:23:81: note: in expansion of macro 'Z_FOR_LOOP_1'
+   23 |                                 _57, _58, _59, _60, _61, _62, _63, _64, N, ...) N
+      |                                                                                 ^
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1072:9: note: in expansion of macro 'Z_FOR_EACH_ENGINE'
+ 1072 |         Z_FOR_EACH_ENGINE(Z_FOR_EACH_IDX_EXEC, sep, F, _, __VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:594:9: note: in expansion of macro 'Z_FOR_EACH_IDX'
+  594 |         Z_FOR_EACH_IDX(F, sep, REVERSE_ARGS(__VA_ARGS__))
+      |         ^~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:829:9: note: in expansion of macro 'FOR_EACH_IDX'
+  829 |         FOR_EACH_IDX(Z_CBPRINTF_PACK_ARG, (;), __VA_ARGS__);\
+      |         ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:866:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE_GENERIC'
+  866 |         Z_CBPRINTF_STATIC_PACKAGE_GENERIC(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf.h:387:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE'
+  387 |         Z_CBPRINTF_STATIC_PACKAGE(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:345:17: note: in expansion of macro 'CBPRINTF_STATIC_PACKAGE'
+  345 |                 CBPRINTF_STATIC_PACKAGE(_msg->data, _plen, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:543:17: note: in expansion of macro 'Z_LOG_MSG_STACK_CREATE'
+  543 |                 Z_LOG_MSG_STACK_CREATE(_cstr_cnt, _domain_id, _source, _level, _data, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:573:9: note: in expansion of macro 'Z_LOG_MSG_CREATE3'
+  573 |         Z_LOG_MSG_CREATE3(_try_0cpy, _mode,  _cstr_cnt, _domain_id, _source,\
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:582:9: note: in expansion of macro 'Z_LOG_MSG_CREATE2'
+  582 |         Z_LOG_MSG_CREATE2(_try_0cpy, _mode, UTIL_CAT(Z_LOG_FUNC_PREFIX_, _level), \
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:307:17: note: in expansion of macro 'Z_LOG_MSG_CREATE'
+  307 |                 Z_LOG_MSG_CREATE(UTIL_NOT(IS_ENABLED(CONFIG_USERSPACE)), _mode,                    \
+      |                 ^~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:318:44: note: in expansion of macro 'Z_LOG2'
+  318 | #define Z_LOG(_level, ...)                 Z_LOG2(_level, 0, Z_LOG_CURRENT_DATA(), __VA_ARGS__)
+      |                                            ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log.h:48:25: note: in expansion of macro 'Z_LOG'
+   48 | #define LOG_ERR(...)    Z_LOG(LOG_LEVEL_ERR, __VA_ARGS__)
+      |                         ^~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/drivers/mspi/mspi_dw.c:1615:33: note: in expansion of macro 'LOG_ERR'
+ 1615 |                                 LOG_ERR("Xfer mode not supported");
+      |                                 ^~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:565:21: warning: declaration of '__v' shadows previous non-variable [-Wshadow]
+  565 |         __auto_type __v = Z_ARGIFY(Z_CONSTIFY(v)); \
+      |                     ^~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:565:21: note: in definition of macro 'Z_CBPRINTF_ARG_SIZE'
+  565 |         __auto_type __v = Z_ARGIFY(Z_CONSTIFY(v)); \
+      |                     ^~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:713:17: note: in expansion of macro 'Z_CBPRINTF_STORE_ARG'
+  713 |                 Z_CBPRINTF_STORE_ARG(&(_buf)[(_idx)], _arg); \
+      |                 ^~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:726:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG2'
+  726 |         Z_CBPRINTF_PACK_ARG2(arg_idx, _pbuf, _pkg_len, _pkg_offset, _pmax, arg)
+      |         ^~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1069:9: note: in expansion of macro 'Z_CBPRINTF_PACK_ARG'
+ 1069 |         fixed_arg0(idx, x)
+      |         ^~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:28:9: note: in expansion of macro 'Z_FOR_EACH_IDX_EXEC'
+   28 |         z_call(0, x, fixed_arg0, fixed_arg1)
+      |         ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:23:81: note: in expansion of macro 'Z_FOR_LOOP_1'
+   23 |                                 _57, _58, _59, _60, _61, _62, _63, _64, N, ...) N
+      |                                                                                 ^
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_loops.h:1072:9: note: in expansion of macro 'Z_FOR_EACH_ENGINE'
+ 1072 |         Z_FOR_EACH_ENGINE(Z_FOR_EACH_IDX_EXEC, sep, F, _, __VA_ARGS__)
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/util_macro.h:594:9: note: in expansion of macro 'Z_FOR_EACH_IDX'
+  594 |         Z_FOR_EACH_IDX(F, sep, REVERSE_ARGS(__VA_ARGS__))
+      |         ^~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:829:9: note: in expansion of macro 'FOR_EACH_IDX'
+  829 |         FOR_EACH_IDX(Z_CBPRINTF_PACK_ARG, (;), __VA_ARGS__);\
+      |         ^~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf_internal.h:866:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE_GENERIC'
+  866 |         Z_CBPRINTF_STATIC_PACKAGE_GENERIC(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/sys/cbprintf.h:387:9: note: in expansion of macro 'Z_CBPRINTF_STATIC_PACKAGE'
+  387 |         Z_CBPRINTF_STATIC_PACKAGE(packaged, inlen, outlen, \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:345:17: note: in expansion of macro 'CBPRINTF_STATIC_PACKAGE'
+  345 |                 CBPRINTF_STATIC_PACKAGE(_msg->data, _plen, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:543:17: note: in expansion of macro 'Z_LOG_MSG_STACK_CREATE'
+  543 |                 Z_LOG_MSG_STACK_CREATE(_cstr_cnt, _domain_id, _source, _level, _data, \
+      |                 ^~~~~~~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:573:9: note: in expansion of macro 'Z_LOG_MSG_CREATE3'
+  573 |         Z_LOG_MSG_CREATE3(_try_0cpy, _mode,  _cstr_cnt, _domain_id, _source,\
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_msg.h:582:9: note: in expansion of macro 'Z_LOG_MSG_CREATE2'
+  582 |         Z_LOG_MSG_CREATE2(_try_0cpy, _mode, UTIL_CAT(Z_LOG_FUNC_PREFIX_, _level), \
+      |         ^~~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:307:17: note: in expansion of macro 'Z_LOG_MSG_CREATE'
+  307 |                 Z_LOG_MSG_CREATE(UTIL_NOT(IS_ENABLED(CONFIG_USERSPACE)), _mode,                    \
+      |                 ^~~~~~~~~~~~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log_core.h:318:44: note: in expansion of macro 'Z_LOG2'
+  318 | #define Z_LOG(_level, ...)                 Z_LOG2(_level, 0, Z_LOG_CURRENT_DATA(), __VA_ARGS__)
+      |                                            ^~~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/include/zephyr/logging/log.h:48:25: note: in expansion of macro 'Z_LOG'
+   48 | #define LOG_ERR(...)    Z_LOG(LOG_LEVEL_ERR, __VA_ARGS__)
+      |                         ^~~~~
+/home/daje/git/sdk-ic-nrf71xx/zephyr/drivers/mspi/mspi_dw.c:1615:33: note: in expansion of macro 'LOG_ERR'
+ 1615 |                                 LOG_ERR("Xfer mode not supported");
+      |                                 ^~~~~~~
+ninja: build stopped: subcommand failed.
+FAILED: _sysbuild/sysbuild/images/mspi_master_slave-prefix/src/mspi_master_slave-stamp/mspi_master_slave-build /home/daje/git/sdk-ic-nrf71xx/nrf/samples/mspi/mspi_master_slave/build/_sysbuild/sysbuild/images/mspi_master_slave-prefix/src/mspi_master_slave-stamp/mspi_master_slave-build 
+cd /home/daje/git/sdk-ic-nrf71xx/nrf/samples/mspi/mspi_master_slave/build/mspi_master_slave && /usr/bin/cmake --build .
+ninja: build stopped: subcommand failed.
