@@ -56,10 +56,11 @@
 			clock-frequency = <32768>;
 		};
 
-		hfxo64m: hfxo64m {
-			compatible = "fixed-clock";
+		hfxo: hfxo {
+			compatible = "nordic,nrf71-hfxo";
 			#clock-cells = <0>;
 			clock-frequency = <DT_FREQ_M(64)>;
+			startup-time-us = <1650>;
 		};
 
 		hfxo32m: hfxo32m {
