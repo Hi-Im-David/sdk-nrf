@@ -232,6 +232,10 @@ void soc_early_init_hook(void)
 #endif
 
 	wifi_setup();
+
+	if (IS_ENABLED(CONFIG_SOC_NRF_FORCE_CONSTLAT)) {
+		nrf_power_task_trigger(NRF_POWER, NRF_POWER_TASK_CONSTLAT);
+	}
 }
 
 void arch_busy_wait(uint32_t time_us)
