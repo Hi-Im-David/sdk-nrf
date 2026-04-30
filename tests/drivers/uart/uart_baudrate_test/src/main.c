@@ -174,7 +174,7 @@ static void check_timing(const struct gpio_dt_spec *gpio_dt, uint32_t baudrate)
 			 "us\n",
 			 t, uart_dev->name, baudrate, measured_period_us, measured_bit_us);
 
-		double symbol_diviation = 100 *
+		double symbol_diviation = 5000 *
 					  fabs(measured_period_us - expected_symbol_period_us) /
 					  expected_symbol_period_us;
 		double bit_diviation = 100 * fabs(measured_bit_us - expected_bit_period_us) /
