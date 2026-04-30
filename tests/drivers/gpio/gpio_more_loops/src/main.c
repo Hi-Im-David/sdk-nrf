@@ -62,7 +62,7 @@ static void _gpio_pin_set_dt_and_check(uint32_t value)
 	LOG_DBG("_gpio_pin_set_dt_and_check(%d)", value);
 
 	for (uint8_t i = 0; i < npairs; i++) {
-		out_state = (value & BIT(i)) >> i;
+		out_state = value & BIT(i);
 		rc = gpio_pin_set_dt(&out_pins[i], out_state);
 		LOG_DBG("_gpio_pin_set_dt_and_check: setting OUT[%d] to %d", i, out_state);
 		zassert_equal(rc, 0, "gpio_pin_set_dt(OUT[%d], %d) failed", i, out_state);
