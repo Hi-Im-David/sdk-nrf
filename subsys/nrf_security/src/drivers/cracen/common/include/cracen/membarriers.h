@@ -27,7 +27,15 @@ static inline void cmb(void)
 	 * outstanding memory transactions complete before subsequent
 	 * memory transactions. It is expected to be defined by cmsis.h.
 	 */
+#if defined(__riscv)
+	/* RISC-V uses the FENCE instruction for memory ordering. The "rw,rw"
+	 * variant is the most conservative and matches the semantics of
+	 * ARM's DMB.
+	 */
+	__asm__ volatile("fence rw, rw" ::: "memory");
+#else
 	__DMB();
+#endif
 }
 
 /** CPU write memory barrier.

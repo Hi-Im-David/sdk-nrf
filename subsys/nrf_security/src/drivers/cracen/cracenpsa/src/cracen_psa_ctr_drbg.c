@@ -38,6 +38,15 @@
 #define ALIGN_UP(value, alignment) \
   (((value) + (alignment) - 1) & ~((alignment) - 1))
 
+/* CONFIG_DCACHE_LINE_SIZE is only defined on Cortex-M targets that include
+ * the cache subsystem. On targets without a data cache (e.g. the FLPR
+ * RISC-V core on nRF7120) fall back to a 4-byte alignment which is the
+ * natural word alignment required by the DMA-friendly buffers.
+ */
+#if !defined(CONFIG_DCACHE_LINE_SIZE)
+#define CONFIG_DCACHE_LINE_SIZE 4
+#endif
+
 #ifdef __IAR_SYSTEMS_ICC__
 #define ALIGN_ON_STACK(type, var, size, alignment)                    \
   type var##base[(size) + ((alignment)/sizeof(type))]; \

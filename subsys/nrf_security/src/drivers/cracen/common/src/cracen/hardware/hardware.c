@@ -114,8 +114,13 @@ void cracen_release(void)
 		nrf_cracen_event_clear(NRF_CRACEN, NRF_CRACEN_EVENT_RNG);
 		nrf_cracen_event_clear(NRF_CRACEN, NRF_CRACEN_EVENT_PKE_IKG);
 
-		/* Clear pending IRQs at the ARM NVIC */
+		/* Clear pending IRQs at the ARM NVIC. The FLPR (RISC-V) core
+		 * uses the CLIC rather than the NVIC; the equivalent CRACEN
+		 * pending state is cleared by the event clears above.
+		 */
+#if !defined(__riscv)
 		NVIC_ClearPendingIRQ(CRACEN_IRQn);
+#endif
 		LOG_DBG_MSG("Powered off CRACEN.");
 	}
 
